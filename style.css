@@ -39,6 +39,7 @@
    Farben: Tinte auf kühlem Papier. Hier zentral änderbar.
 ------------------------------------------------------------ */
 :root {
+  --nacht: #0c0c0e;   /* schwarzer Rahmen, Kopf und Fuss */
   --papier: #eceee8;
   --tinte: #1c2a4a;
   --graphit: #575e6c;
@@ -305,6 +306,43 @@ cite { font-style: italic; }
   margin-left: 0.4rem;
 }
 
+/* Lebenslauf: Rubrik im Rand, Zeilen mit Zeitraum links */
+.cv { padding-bottom: 2.25rem; }
+.raster > .cv__titel { grid-column: 1; }
+.cv__titel {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.3;
+  padding-top: 0.5rem;
+  hyphens: manual;
+}
+.cv__liste {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cv__liste li {
+  display: grid;
+  grid-template-columns: 6.25rem minmax(0, 1fr);
+  column-gap: 1rem;
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--linie);
+  line-height: 1.45;
+}
+.cv__liste li:last-child { border-bottom: 1px solid var(--linie); }
+.cv__zeit {
+  color: var(--graphit);
+  font-size: 0.9375rem;
+  padding-top: 0.1rem;
+  font-variant-numeric: tabular-nums;
+}
+.cv__wo {
+  color: var(--graphit);
+  font-size: 0.9375rem;
+}
+.cv__text { padding-top: 0.55rem; }
+
 /* Mehrere Links unter einem Eintrag */
 .eintrag__links {
   display: flex;
@@ -326,6 +364,21 @@ cite { font-style: italic; }
   padding-bottom: 2.25rem;
 }
 .eintrag .rand { padding-top: 0.35rem; }
+
+/* Buchcover im Rand, über den Angaben */
+.cover {
+  display: block;
+  width: 100%;
+  max-width: 9.5rem;
+  margin-bottom: 1.1rem;
+}
+.cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1px;
+  box-shadow: 0 0 0 1px rgba(28, 42, 74, 0.1);
+}
 
 .eintrag__titel {
   font-size: 1.45rem;
@@ -461,7 +514,9 @@ cite { font-style: italic; }
     margin-bottom: 0.3rem;
   }
   .eintrag .rand p + p { margin-top: 0; }
-  .eintrag .rand p + p::before { content: ",\00a0"; }
+  .cover { flex: 0 0 100%; max-width: none; margin-bottom: 0.9rem; }
+  .cover img { width: 7.5rem; }
+  .eintrag .rand p:not(:last-child)::after { content: ",\00a0"; }
 
   /* Kurzbiografie steht auf dem Handy unter dem Fliesstext */
   .abschnitt aside.rand { order: 2; padding-bottom: 2rem; }
@@ -473,11 +528,69 @@ cite { font-style: italic; }
   .kontakt .rand { margin-bottom: 0.1rem; }
   .thema__titel { margin-bottom: 0.6rem; font-size: 1.35rem; }
   .thema__art { display: block; margin-left: 0; }
+  .cv__titel { margin-bottom: 0.4rem; padding-top: 0; font-size: 1.35rem; }
+  .cv__liste li { grid-template-columns: 5.25rem minmax(0, 1fr); column-gap: 0.75rem; }
+  .cv__wo { display: block; }
   .kontakt .text { font-size: 1.125rem; }
 
   .fuss { row-gap: 0.3rem; }
   .fuss .text + .rand { margin-top: 1.5rem; }
   .clear-angabe__liste div { grid-template-columns: 3.75rem minmax(0, 1fr); }
+}
+
+/* ------------------------------------------------------------
+   Rahmen: Kopf, Eröffnung und Fuss auf Schwarz,
+   der Lesetext liegt wie ein Blatt Papier darauf.
+------------------------------------------------------------ */
+body { background: var(--nacht); }
+
+.nacht {
+  --papier: var(--nacht);
+  --tinte: #ecebe7;
+  --graphit: #a3a29e;
+  --linie: #2a2a2e;
+  --markierung: #f2957f;
+  color: var(--tinte);
+}
+
+.seite {
+  --blatt-rand: 3rem;
+  max-width: calc(var(--rand) + var(--abstand) + var(--spalte) + 9rem);
+  padding: 0 4.5rem;
+}
+
+.blatt {
+  margin: 0 calc(-1 * var(--blatt-rand));
+  padding: 0 var(--blatt-rand) 3rem;
+  background: var(--papier);
+  color: var(--tinte);
+}
+.blatt > .abschnitt:first-child { border-top: 0; }
+
+.eroeffnung { padding-bottom: clamp(3.5rem, 8vw, 5.5rem); }
+
+.fuss {
+  margin-top: 0;
+  padding-top: 2.75rem;
+  border-top: 0;
+}
+
+/* Unterseite (Impressum) als Blatt */
+.unterseite.blatt { padding-top: clamp(2.5rem, 6vw, 4.5rem); }
+.kopf + .blatt { margin-top: clamp(2.25rem, 5vw, 3.5rem); }
+
+@media (max-width: 40rem) {
+  .seite {
+    --blatt-rand: 1rem;
+    padding: 0 1.375rem;
+  }
+  .blatt { padding-bottom: 2rem; }
+}
+
+@media print {
+  body { background: #fff; }
+  .nacht { --tinte: #000; --graphit: #444; --linie: #ccc; --markierung: #000; }
+  .blatt { margin: 0; padding: 0; }
 }
 
 @media print {

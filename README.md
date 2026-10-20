@@ -1,6 +1,6 @@
 # Website von Leonie Gantenbein
 
-Eine schlichte, schnelle Website für GitHub Pages: Zur Person, Forschung, Themen, Bücher und Texte, Kontakt und ein Impressum. Keine Programmierkenntnisse nötig, keine Cookies, keine Tracker, die Schrift ist lokal eingebunden.
+Eine schlichte, schnelle Website für GitHub Pages: Zur Person, Forschung, Themen, Bücher und Texte, Lebenslauf, Kontakt und ein Impressum. Keine Programmierkenntnisse nötig, keine Cookies, keine Tracker, die Schrift ist lokal eingebunden.
 
 ## Was im Ordner liegt
 
@@ -11,6 +11,7 @@ Eine schlichte, schnelle Website für GitHub Pages: Zur Person, Forschung, Theme
 | `impressum.html` | Impressum und Datenschutz (Vorlage) |
 | `style.css` | Gestaltung: Farben, Schrift, Abstände |
 | `leonie-gantenbein.jpg`, `leonie-gantenbein-800.jpg` | Dein Foto, in zwei Grössen (die kleine lädt auf dem Handy schneller) |
+| `cover-….jpg` | Die Buchcover |
 | `mail.js` | Setzt deine E-Mail-Adresse erst beim Klick zusammen, damit sie nicht offen auf der Seite steht |
 | `fonts/` | Die Schrift Literata (frei nutzbar, SIL Open Font License) |
 
@@ -23,7 +24,7 @@ Deine Adresse wird **https://leoniegantenbein.github.io**
    - Name: genau `leoniegantenbein.github.io`
    - Sichtbarkeit: **Public** (mit einem kostenlosen Konto funktioniert GitHub Pages nur mit öffentlichen Repositories)
    - auf **Create repository** klicken
-3. **Dateien hochladen:** im neuen Repository auf **uploading an existing file** (oder **Add file**, dann **Upload files**). Den *Inhalt* dieses Ordners hineinziehen, also `index.html`, `impressum.html`, `style.css`, `mail.js`, die beiden Bilder und die Ordner `en` und `fonts`. Unten auf **Commit changes** klicken.
+3. **Dateien hochladen:** im neuen Repository auf **uploading an existing file** (oder **Add file**, dann **Upload files**). Den *Inhalt* dieses Ordners hineinziehen, also `index.html`, `impressum.html`, `style.css`, `mail.js`, alle Bilder (`.jpg`) und die Ordner `en` und `fonts`. Unten auf **Commit changes** klicken.
 4. **Pages prüfen:** im Repository auf **Settings**, links auf **Pages**. Unter *Build and deployment* sollte stehen: Source **Deploy from a branch**, Branch **main** und Ordner **/ (root)**. Falls nicht, so einstellen und **Save** klicken.
 5. **Fertig:** Nach ein bis zwei Minuten ist die Seite unter `https://leoniegantenbein.github.io` erreichbar.
 
@@ -41,9 +42,11 @@ Deine E-Mail-Adresse steht nicht als Text auf der Seite. Wer auf „Nachricht sc
 - **Neues Thema:** unter «Themen» einen ganzen Block von `<article class="thema raster" …>` bis `</article>` kopieren und darunter einfügen. Titel und Text ändern; in der Liste darunter verweist `href="#annetzung"` auf den Eintrag mit dieser Kennung. Ein Text kann in beliebig vielen Themen vorkommen.
 - **Neues PDF:** einen Ordner `dokumente` mit der Datei ins Repository ziehen und mit `href="dokumente/dateiname.pdf"` verlinken. Dateinamen am besten klein und ohne Leerzeichen.
 - **Eintrag entfernen:** den ganzen `<article>`-Block löschen.
+- **Lebenslauf:** In der passenden Rubrik (Stellen, Ausbildung …) einen ganzen Block von `<li>` bis `</li>` kopieren, oben einfügen und Zeitraum, Bezeichnung und Ort ändern. Auf der englischen Seite ebenso.
+- **Buchcover:** Cover stehen im Rand neben dem Buch, als Datei `cover-titel.jpg` (Hochformat, etwa 480 Pixel breit). Austauschen: neue Datei unter demselben Namen hochladen.
 - **Foto austauschen:** ein neues Bild unter demselben Namen hochladen (`leonie-gantenbein.jpg`, am besten 1600 × 900 Pixel). Ist es kein KI-Bild, in `index.html` die Bildnotiz „KI-generiertes Bild“ anpassen oder löschen.
 - **CLEAR-Angabe im Fuss:** Sie steht auf R1, weil die Seite erst online geht, wenn du alles geprüft hast. Überarbeitest du später Texte mit einer KI, ergänze bei A das Modell und den Zeitraum und setze R erst wieder auf R1, wenn du die Änderungen geprüft hast.
-- **Farben:** ganz oben in `style.css` unter *Farben*. Eine dunkle Variante für den Nachtmodus ist schon eingebaut.
+- **Farben:** ganz oben in `style.css` unter *Farben*. `--nacht` ist das Schwarz von Rahmen, Kopf und Fuss, `--papier` das helle Blatt mit dem Lesetext. Eine dunkle Variante für den Nachtmodus ist schon eingebaut.
 
 ## Das CLEAR-Repository
 
