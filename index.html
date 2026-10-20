@@ -131,7 +131,7 @@
   Die englische Fassung liegt in en/index.html. Wenn du etwas änderst, ändere es in beiden Dateien.
 
   So passt du die Seite an:
-  Neue Titel und Themen ergänzt du, indem du einen ganzen <article> … </article>-Block
+  Neue Titel ergänzt du, indem du einen ganzen <article> … </article>-Block
   kopierst und anpasst. Die Schritte stehen in der README.md.
 -->
 
@@ -145,9 +145,7 @@
       <nav class="kopf__nav text" aria-label="Hauptnavigation">
         <ul>
           <li><a href="#zur-person">Zur Person</a></li>
-          <li><a href="#forschung">Forschung</a></li>
-          <li><a href="#themen">Themen</a></li>
-          <li><a href="#buecher">Bücher und Texte</a></li>
+          <li><a href="#publikationen">Publikationen</a></li>
           <li><a href="#lebenslauf">Lebenslauf</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
           <li class="kopf__sprache"><a href="en/" lang="en" hreflang="en">English</a></li>
@@ -210,80 +208,25 @@
         </div>
       </section>
 
-      <!-- Forschung -->
-      <section class="abschnitt" id="forschung" aria-labelledby="titel-forschung">
+      <!-- Publikationen, die neueste zuoberst -->
+      <section class="abschnitt" id="publikationen" aria-labelledby="titel-publikationen">
         <div class="raster">
-          <h2 class="abschnitt__titel text" id="titel-forschung">Forschung</h2>
+          <h2 class="abschnitt__titel text" id="titel-publikationen">Publikationen</h2>
         </div>
-        <div class="raster">
-          <aside class="rand" aria-label="Schwerpunkte">
-            <ul class="rand__liste">
-              <li>Moralische Normativität</li>
-              <li>Mensch-KI-Interaktion</li>
-              <li>Philosophische Ethik</li>
-              <li>Open Science</li>
-              <li>Digitale Lebenswelten</li>
-            </ul>
-          </aside>
-          <div class="text prosa">
-            <p>Im Zentrum steht die Frage, was mit menschlicher Autonomie, Verantwortung und Urteilskraft geschieht, wenn technische Systeme unsere Entscheidungen prägen.</p>
+
+        <article class="eintrag raster" id="weltbestreitung">
+          <div class="rand">
+            <p>Erscheint 2027</p>
+            <p>In: <cite>Demokratie im Zeitalter der Desinformation</cite></p>
+            <p>Hg. von Zlatko Valentic und Martin Baesler</p>
           </div>
-        </div>
-      </section>
-
-      <!-- Themen -->
-      <section class="abschnitt" id="themen" aria-labelledby="titel-themen">
-        <div class="raster">
-          <h2 class="abschnitt__titel text" id="titel-themen">Themen</h2>
-        </div>
-
-        <!-- Neues Thema ergänzen: einen ganzen Block von <article class="thema raster"> bis </article>
-             kopieren, darunter einfügen und Titel, Text und Verweise anpassen.
-             Ein Verweis auf einen Text unter «Bücher und Texte» nutzt dessen Kennung (id):
-               #zwischen-prompt-und-welt   #weltbestreitung   #clear   #annetzung
-             Ein Verweis nach aussen (z. B. auf ein GitHub-Repository): die volle Adresse
-             als href="https://…" eintragen. -->
-
-        <article class="thema raster" id="thema-annetzung">
-          <h3 class="thema__titel">Theorie der Annetzung</h3>
           <div class="text">
-            <p class="thema__text">Wie wir uns mit Technologien verbinden: Annetzung beschreibt den individuellen und gesellschaftlichen Prozess, in dem KI, Games und digitale Umgebungen Teil unseres Handelns und unserer Wirklichkeit werden, und was daraus für Freiheit und Verantwortung folgt.</p>
-            <ul class="thema__verweise">
-              <li><a href="#annetzung"><cite>Annetzung</cite></a> <span class="thema__art">Buch, 2025, Open Access</span></li>
-            </ul>
+            <h3 class="eintrag__titel">
+              «Weltbestreitung»
+              <span class="eintrag__untertitel">Wie Deepfakes das Dementi verbilligen und wie Demokratien es wieder verteuern können</span>
+            </h3>
           </div>
         </article>
-
-        <article class="thema raster" id="thema-clear">
-          <h3 class="thema__titel">Konzept der CLEAR-Kennzeichnung</h3>
-          <div class="text">
-            <p class="thema__text">Woran war eine KI an einem Text beteiligt, und wer steht dafür ein? CLEAR ersetzt das pauschale «KI-generiert» durch fünf Angaben, ähnlich einer Quellenangabe, und fragt, welche Kultur es braucht, damit Offenlegung nicht bestraft wird.</p>
-            <ul class="thema__verweise">
-              <li><a href="clear.html"><cite>CLEAR. Kennzeichnung von KI-Beteiligung an Texten</cite></a> <span class="thema__art">Konzept, Version 1.0</span></li>
-              <li><a href="#zwischen-prompt-und-welt"><cite>Zwischen Prompt und Welt</cite></a> <span class="thema__art">Buch, erscheint im Dezember 2026</span></li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="thema raster" id="thema-ki">
-          <h3 class="thema__titel">Philosophie über KI</h3>
-          <div class="text">
-            <p class="thema__text">Wie künstliche Intelligenz Denken, Handeln und Zusammenleben verändert: von der Theorie der Annetzung über den Alltag mit einer KI bis zur Frage, was Deepfakes für die Demokratie bedeuten.</p>
-            <ul class="thema__verweise">
-              <li><a href="#annetzung"><cite>Annetzung</cite></a> <span class="thema__art">Buch, 2025, Open Access</span></li>
-              <li><a href="#zwischen-prompt-und-welt"><cite>Zwischen Prompt und Welt</cite></a> <span class="thema__art">Buch, erscheint im Dezember 2026</span></li>
-              <li><a href="#weltbestreitung">«Weltbestreitung»</a> <span class="thema__art">Beitrag im Sammelband, erscheint 2027</span></li>
-              <li><a href="#decoding-ai"><cite>Decoding Artificial Intelligence</cite></a> <span class="thema__art">Bericht, 2019, Mitarbeit</span></li>
-            </ul>
-          </div>
-        </article>
-      </section>
-
-      <!-- Bücher und Texte -->
-      <section class="abschnitt" id="buecher" aria-labelledby="titel-buecher">
-        <div class="raster">
-          <h2 class="abschnitt__titel text" id="titel-buecher">Bücher und Texte</h2>
-        </div>
 
         <!-- Sobald das Buch erschienen ist (14. Dezember 2026):
              «Erscheint im Dezember 2026» durch «2026» ersetzen und «Beim Verlag vorbestellen»
@@ -308,35 +251,24 @@
           </div>
         </article>
 
-        <article class="eintrag raster" id="weltbestreitung">
-          <div class="rand">
-            <p>Erscheint 2027</p>
-            <p>In: <cite>Demokratie im Zeitalter der Desinformation</cite></p>
-            <p>Hg. von Zlatko Valentic und Martin Baesler</p>
-          </div>
-          <div class="text">
-            <h3 class="eintrag__titel">
-              «Weltbestreitung»
-              <span class="eintrag__untertitel">Wie Deepfakes das Dementi verbilligen und wie Demokratien es wieder verteuern können</span>
-            </h3>
-          </div>
-        </article>
-
         <article class="eintrag raster" id="clear">
           <div class="rand">
             <p>2026</p>
-            <p>Konzept auf GitHub</p>
+            <p>Theorie und Spezifikation</p>
             <p>Version 1.0</p>
-            <p>CC BY 4.0</p>
+            <p>Open Access, CC BY 4.0</p>
           </div>
           <div class="text">
             <h3 class="eintrag__titel">
               <cite>CLEAR <span class="eintrag__untertitel">Kennzeichnung von KI-Beteiligung an Texten</span></cite>
             </h3>
-            <p class="eintrag__text">Ein Vorschlag, offenzulegen, woran und wie weit eine KI an einem Text beteiligt war, und wer dafür einsteht. Statt eines pauschalen «KI-generiert» gibt CLEAR fünf Angaben für jede beteiligte Person: Konzeption, Sprache, Evidenz, Ausweisung und Rechenschaft. Dazu ein Plädoyer dafür, dass Offenlegung nicht abwerten darf, und ein Vorschlag, wie Schulen und Hochschulen mit denselben Angaben sagen können, was sie erwarten. Das Konzept stammt aus dem Buch <cite>Zwischen Prompt und Welt</cite>, das im Dezember 2026 bei Schwabe erscheint.</p>
+            <p class="eintrag__text">CLEAR ist ein Vorschlag, die Beteiligung künstlicher Intelligenz an Texten freiwillig und differenziert offenzulegen. An die Stelle des pauschalen Etiketts «KI-generiert» treten fünf Angaben zu Konzeption, Sprache, Evidenz, Ausweisung und Rechenschaft, die jede beteiligte Person für ihren eigenen Anteil macht. Wie eine Quellenangabe ist die Kennzeichnung damit keine Wertung, sondern eine Auskunft über die Entstehung eines Textes.</p>
+            <p class="eintrag__text">Die Systematik ist mit einer These zur Kultur der Offenlegung verbunden: Kennzeichnung wird nur dort gelebt, wo Offenlegung nicht abwertet. Entscheidend ist deshalb nicht, ob eine KI beteiligt war, sondern ob ein Mensch für den Text einsteht. Als Erwartungsprofil gelesen, gibt CLEAR Schulen und Hochschulen zudem eine gemeinsame Sprache, um festzulegen, welche Formen der KI-Beteiligung sie zulassen. Ein Factsheet bündelt alle Kürzel und enthält einen Prompt, mit dem Sprachmodelle ihre eigene Beteiligung ausweisen können.</p>
+            <p class="eintrag__text">Das Konzept wurde im Buch <cite>Zwischen Prompt und Welt</cite> entwickelt und knüpft an den Begriff der Welttransparenz aus <cite>Annetzung</cite> an.</p>
             <p class="eintrag__links">
-              <a class="eintrag__link" href="clear.html">Mehr zu CLEAR</a>
-              <a class="eintrag__link" href="https://github.com/LeonieGantenbein/clear-kennzeichnung">Auf GitHub lesen</a>
+              <a class="eintrag__link" href="clear.html">CLEAR lesen</a>
+              <a class="eintrag__link" href="clear.html#factsheet">Factsheet und Prompt</a>
+              <a class="eintrag__link" href="https://github.com/LeonieGantenbein/clear-kennzeichnung">Auf GitHub</a>
               <a class="eintrag__link" href="https://github.com/LeonieGantenbein/clear-kennzeichnung/issues">Rückmeldung geben</a>
             </p>
           </div>
@@ -486,7 +418,7 @@
           <dl class="clear-angabe__liste">
             <div>
               <dt>C2</dt>
-              <dd>Einzelne inhaltliche Teile hat eine KI ausgearbeitet, etwa die Beschreibungen der Bücher und Themen. Die Gedanken stammen aus Leonie Gantenbeins eigenen Texten.</dd>
+              <dd>Einzelne inhaltliche Teile hat eine KI ausgearbeitet, etwa die Beschreibungen der Publikationen. Die Gedanken stammen aus Leonie Gantenbeins eigenen Texten.</dd>
             </div>
             <div>
               <dt>L3</dt>

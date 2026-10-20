@@ -1,6 +1,6 @@
 # Website von Leonie Gantenbein
 
-Eine schlichte, schnelle Website für GitHub Pages: Zur Person, Forschung, Themen, Bücher und Texte, Lebenslauf, Kontakt und ein Impressum. Keine Programmierkenntnisse nötig, keine Cookies, keine Tracker, die Schrift ist lokal eingebunden.
+Eine schlichte, schnelle Website für GitHub Pages: Zur Person, Publikationen, Lebenslauf, Kontakt und ein Impressum. Keine Programmierkenntnisse nötig, keine Cookies, keine Tracker, die Schrift ist lokal eingebunden.
 
 ## Was im Ordner liegt
 
@@ -40,8 +40,7 @@ Direkt auf GitHub: Datei `index.html` anklicken, auf das Stift-Symbol (**Edit**)
 
 Deine E-Mail-Adresse steht nicht als Text auf der Seite. Wer auf „Nachricht schreiben“ klickt, bekommt sie in seinem Mailprogramm; Spam-Roboter, die Seiten nach Adressen durchsuchen, finden sie so nicht.
 
-- **Neuer Titel:** unter «Bücher und Texte» einen ganzen Block von `<article class="eintrag raster" …>` bis `</article>` kopieren und darüber einfügen, dann die Angaben ändern. Gib dem Eintrag eine eigene Kennung, z. B. `id="neuer-titel"` (klein, ohne Leerzeichen und Umlaute), damit du ihn aus den Themen verlinken kannst.
-- **Neues Thema:** unter «Themen» einen ganzen Block von `<article class="thema raster" …>` bis `</article>` kopieren und darunter einfügen. Titel und Text ändern; in der Liste darunter verweist `href="#annetzung"` auf den Eintrag mit dieser Kennung. Ein Text kann in beliebig vielen Themen vorkommen.
+- **Neuer Titel:** unter «Publikationen» einen ganzen Block von `<article class="eintrag raster" …>` bis `</article>` kopieren und darüber einfügen, dann die Angaben ändern. Gib dem Eintrag eine eigene Kennung, z. B. `id="neuer-titel"` (klein, ohne Leerzeichen und Umlaute), damit man direkt auf ihn verlinken kann.
 - **Neues PDF:** einen Ordner `dokumente` mit der Datei ins Repository ziehen und mit `href="dokumente/dateiname.pdf"` verlinken. Dateinamen am besten klein und ohne Leerzeichen.
 - **Eintrag entfernen:** den ganzen `<article>`-Block löschen.
 - **Lebenslauf:** In der passenden Rubrik (Stellen, Ausbildung …) einen ganzen Block von `<li>` bis `</li>` kopieren, oben einfügen und Zeitraum, Bezeichnung und Ort ändern. Auf der englischen Seite ebenso.
@@ -55,7 +54,7 @@ Deine E-Mail-Adresse steht nicht als Text auf der Seite. Wer auf „Nachricht sc
 CLEAR liegt in einem eigenen Repository: **https://github.com/LeonieGantenbein/clear-kennzeichnung**. Die Website verlinkt darauf, und Rückmeldungen kommen dort über **Issues** an.
 
 1. Auf github.com **+**, dann **New repository**. Name genau `clear-kennzeichnung`, **Public**, **Create repository**.
-2. Auf **uploading an existing file** klicken und den Inhalt des Ordners `clear-kennzeichnung` hineinziehen: auf Deutsch `README.md`, `KULTUR.md`, `SPEZIFIKATION.md`, auf Englisch `README.en.md`, `CULTURE.md`, `SPECIFICATION.md`, dazu `LICENSE.md` und `CITATION.cff`. **Commit changes**.
+2. Auf **uploading an existing file** klicken und den Inhalt des Ordners `clear-kennzeichnung` hineinziehen: auf Deutsch `README.md`, `KULTUR.md`, `SPEZIFIKATION.md`, `FACTSHEET.md`, auf Englisch `README.en.md`, `CULTURE.md`, `SPECIFICATION.md`, `FACTSHEET.en.md`, dazu `LICENSE.md` und `CITATION.cff`. **Commit changes**.
 3. Fertig. GitHub zeigt die `README.md` als Startseite, und über **Cite this repository** lässt sich CLEAR direkt zitieren.
 
 ## Eigene Domain (optional)
