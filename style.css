@@ -687,3 +687,5 @@ body { background: var(--nacht); }
   .tabelle--kuerzel tbody th { width: auto; }
   .tabelle--kuerzel tr:not(.tabelle__gruppe) { display: grid; grid-template-columns: 2.75rem 1fr; gap: 0.75rem; padding: 0.5rem 0; }
 }
+.dokument__liste { margin: -0.4em 0 1.1em; padding-left: 1.25rem; }
+.dokument__liste li + li { margin-top: 0.25rem; }

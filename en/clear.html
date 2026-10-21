@@ -84,13 +84,20 @@
         <p class="dokument__achsen"><i>Conception · Language · Evidence · Attribution · Responsibility</i></p>
         <p class="dokument__byline">Leonie Gantenbein · Version 1.0 · 2026 · Licence <a href="https://creativecommons.org/licenses/by/4.0/legalcode.en">CC BY 4.0</a></p>
 
-        <h2>Overview</h2>
-        <p>CLEAR is a proposal for disclosing the involvement of artificial intelligence in texts voluntarily and in a differentiated way. The blanket label “AI-generated” is replaced by five statements. They record in which stages of the work an AI took part, how far its contribution extends and who stands behind the result. Each person involved makes these statements for their own share. Like a citation, CLEAR is therefore not a judgement but an account of how a text came into being.</p>
+        <p>When it comes to writing, the shadow use of AI is widespread – in literature and research as much as on social media and in private life. We generate a text with AI and humanise it – often in emails, too. And in reply, we receive an equally humanised AI text from a colleague. Along the way, we learn what humanising means and what to watch out for: few dashes, no lists of three, no “both … and”.</p>
+        <p>But why do we speak of shadow use at all? The word reveals that we regard the use of AI as something better kept hidden. It is usually not forbidden. It is merely considered a flaw.</p>
+        <p>In the EU, the AI Act ushered in a culture of AI labelling this summer. Since 2 August 2026, deepfakes – deceptively realistic recordings – must be disclosed as artificially generated. This also affects Swiss actors as soon as their content is used in the EU. For texts, the obligation is narrowly defined: an AI-generated text only has to be labelled if it is intended to inform the public on matters of public interest and no human has reviewed it editorially and taken responsibility for it. In the end, the law too asks whether someone stands behind the text.</p>
+        <p>Public transparency for texts that goes beyond this obligation would be just as important. What if an AI text could simply be labelled, and some people led by example from the start because they are not too proud to say how and where they use AI? And what if this caught on and made it easier for us to assess a text and form an opinion?</p>
+        <p>Yes, one can lie with a label. But hasn’t that always been the case?</p>
+        <p>CLEAR is my proposal for disclosing the involvement of artificial intelligence in texts voluntarily and in a differentiated way. Instead of the blanket label “AI-generated”, five short statements record in which stages of the work an AI took part, how far its contribution extends and who stands behind the result. Each person involved makes these statements for their own share.</p>
+        <p>CLEAR works like a citation: it does not judge; it provides information about how a text came into being.</p>
+        <p>Responsibility for a statement always lies with whoever makes it, not with the AI. We take responsibility for much of what an AI has contributed, and rightly so, because we are the ones who have to check it. The statement R makes visible whether this check has taken place.</p>
         <aside class="dokument__notiz">
-          <p><b>Culture first, then labelling.</b> A label can only take effect where disclosure is not penalised. As long as an honest statement devalues one’s own text, only those who can afford it will label, and silence remains the rational choice. CLEAR therefore presupposes a cultural understanding that has yet to be reached. <a href="https://github.com/LeonieGantenbein/clear-kennzeichnung/blob/main/CULTURE.md">Chapter “Culture before Labelling”</a></p>
+          <p><b>Culture first, then labelling.</b> A label only helps where openness is not penalised. As long as an honest statement devalues one’s own text, only those who can afford it will label. For everyone else, silence remains the reasonable choice. That is why CLEAR needs an understanding of how we want to deal with AI involvement, and this understanding has yet to be reached. More on this in the <a href="https://github.com/LeonieGantenbein/clear-kennzeichnung/blob/main/CULTURE.md">chapter “Culture before Labelling”</a>.</p>
         </aside>
 
         <h2>Quick reference</h2>
+        <p>The five statements at a glance:</p>
         <div class="tabelle">
           <table>
             <thead><tr><th scope="col">Axis</th><th scope="col">Subject</th><th scope="col">Levels</th></tr></thead>
@@ -99,28 +106,35 @@
             <tr><th scope="row"><b>L</b> – Language</th><td>Linguistic editing</td><td>L0 without AI · L1 proofreading · L2 stylistic editing · L3 substantive editing (structure and argument) · L4 translation</td></tr>
             <tr><th scope="row"><b>E</b> – Evidence</th><td>Sources and how they were processed</td><td>E0 without AI · E1 source access · E2 source processing · E3 source interpretation · E4 interpretation of results; suffix (p) published, (n) unpublished material</td></tr>
             <tr><th scope="row"><b>A</b> – Attribution</th><td>Declaration of the tools</td><td>AI models used and period of use</td></tr>
-            <tr><th scope="row"><b>R</b> – Responsibility</th><td>Accountability</td><td>R1 fully checked and taken responsibility for · R2 spot-checked · R3 unchecked, no one responsible</td></tr>
+            <tr><th scope="row"><b>R</b> – Responsibility</th><td>Accountability</td><td>R1 fully checked and taken responsibility for · R2 spot-checked · R3 published unchecked, with the risk of having to take responsibility for the text nonetheless</td></tr>
             </tbody>
           </table>
         </div>
-        <p>The <b>highest level reached</b> is given for each axis; it includes the levels below. Each person involved – such as author, editor or translator – gets a line of their own. The label appears before or after the text.</p>
-        <p class="dokument__label">Example</p>
+        <p>For each axis, give the highest level reached; it includes the levels below. If several people are involved, such as author, editor or translator, each gets a line of their own. The label appears before or after the text.</p>
+        <p><b>Where the label goes.</b> It is a one-liner and fits anywhere. Place it where information about how a text came into being is expected, so that no one has to search for it:</p>
+        <ul class="dokument__liste">
+          <li>Book: in the imprint</li>
+          <li>Article: at the end</li>
+          <li>Post and other short texts: also at the end</li>
+        </ul>
+        <p><b>An example.</b> This is how the text of my book is labelled:</p>
         <pre><code>CLEAR (author): C1, L3, E(p)1, A: Claude Opus 4.8, Fable 5, Opus 5, 04–09/2026, R1</code></pre>
-        <p>The <a href="https://github.com/LeonieGantenbein/clear-kennzeichnung/blob/main/SPECIFICATION.md">chapter “Specification”</a> contains the full description of all levels, guidance on classification and the application in educational institutions.</p>
-        <p>All abbreviations at a glance, together with a prompt that lets a language model declare its own involvement, can be found in the <a href="#factsheet">factsheet</a> at the end of this page.</p>
+        <p>The line of thought is mine; the AI was a discussion partner (C1). In the writing, it also intervened in structure and argument (L3) and searched for published sources, which I read myself (E(p)1). Three models were involved between April and September 2026, and I checked every passage and take responsibility for it (R1).</p>
+        <p>All levels in detail, guidance on classification and the application in schools and universities can be found in the <a href="https://github.com/LeonieGantenbein/clear-kennzeichnung/blob/main/SPECIFICATION.md">chapter “Specification”</a>. The <a href="#factsheet">factsheet</a> at the end of this page summarises all abbreviations and contains a prompt with which a language model proposes its own involvement.</p>
 
         <h2>Status</h2>
-        <p>CLEAR is a proposal that has not yet been tested or evaluated in practice, and it is certainly incomplete. Feedback, experience from use and proposals for images, moving images and code are expressly welcome – via the <a href="https://github.com/LeonieGantenbein/clear-kennzeichnung/issues">issues in the GitHub repository</a>.</p>
+        <p>CLEAR is a proposal. It has not yet been tested or evaluated in practice and is certainly still incomplete. That is precisely why I welcome feedback: experience from use, objections and ideas on how CLEAR could be transferred to images, moving images and code. The best way to reach me is via the <a href="https://github.com/LeonieGantenbein/clear-kennzeichnung/issues">issues in the GitHub repository</a>.</p>
 
         <h2>Origin</h2>
-        <p>CLEAR was developed in the book <a href="https://www.schwabe.ch/produkt/leonie-gantenbein-zwischen-prompt-und-welt-9783796556333-t-20562"><cite lang="de">Zwischen Prompt und Welt. Über das Leben mit KI</cite></a> [Between Prompt and World: On Living with AI] by Leonie Gantenbein, forthcoming in December 2026 from Schwabe Verlag. It builds on concepts from <a href="https://doi.org/10.24894/978-3-7965-5360-8"><cite lang="de">Annetzung. Handeln durch Technologie und Imagination</cite></a> [Acting through Technology and Imagination] (2025), in particular the concept of world transparency (<i lang="de">Welttransparenz</i>): the claim to know whether one is facing something actual, something computer-generated or something imagined.</p>
+        <p>CLEAR emerged in my book <a href="https://www.schwabe.ch/produkt/leonie-gantenbein-zwischen-prompt-und-welt-9783796556333-t-20562"><cite lang="de">Zwischen Prompt und Welt. Über das Leben mit KI</cite></a> [Between Prompt and World: On Living with AI], forthcoming on 14 December 2026 from Schwabe Verlag.</p>
+        <p>CLEAR builds on concepts from my earlier book <a href="https://doi.org/10.24894/978-3-7965-5360-8"><cite lang="de">Annetzung. Handeln durch Technologie und Imagination</cite></a> [Acting through Technology and Imagination] (Schwabe 2025, open access, funded by the Swiss National Science Foundation), above all the concept of world transparency (<i lang="de">Welttransparenz</i>): the claim to know whether one is facing something actual, something computer-generated or something imagined.</p>
 
         <h2>Citation</h2>
+        <p>If you use CLEAR or develop it further, please cite:</p>
         <p class="dokument__zitat">Gantenbein, Leonie (2026): CLEAR – Kennzeichnung von KI-Beteiligung an Texten [CLEAR – Labelling AI Involvement in Texts]. Version 1.0. https://github.com/LeonieGantenbein/clear-kennzeichnung</p>
-        <p><a href="https://github.com/LeonieGantenbein/clear-kennzeichnung/blob/main/README.en.md">CLEAR on GitHub</a></p>
 
         <h2 id="factsheet">Factsheet</h2>
-        <p>The factsheet summarises all abbreviations and rules of CLEAR. It serves as a quick reference and can be given to a language model as a prompt so that the model declares its involvement in a text according to CLEAR.</p>
+        <p>The factsheet summarises all abbreviations and rules on one page. You can use it for reference or give it to a language model so that it proposes its involvement in a text according to CLEAR.</p>
         <p class="dokument__label">Notation</p>
         <pre><code>CLEAR (role): C?, L?, E(p|n)?, A: models, period, R?</code></pre>
         <p>The highest level reached is given for each axis; it includes the levels below. Each person involved gets a line of their own. The label appears before or after the text.</p>
@@ -151,13 +165,13 @@
             <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>R</b> – Responsibility: accountability</th></tr>
             <tr><th scope="row">R1</th><td>Fully checked and taken responsibility for by the human.</td></tr>
             <tr><th scope="row">R2</th><td>Spot-checked and therefore not fully taken responsibility for.</td></tr>
-            <tr><th scope="row">R3</th><td>Published unchecked and no one’s responsibility.</td></tr>
+            <tr><th scope="row">R3</th><td>Published unchecked, with the risk of having to take responsibility for the text nonetheless.</td></tr>
             </tbody>
           </table>
         </div>
 
         <h3>Prompt for a language model’s self-declaration</h3>
-        <p>The following text can be copied into the same chat at the end of a collaboration. The model then proposes a label and gives reasons for it.</p>
+        <p>A language model can propose its own involvement. To do so, copy the following text into the same chat at the end of a collaboration. The model then proposes a level for C, L, E and A and gives reasons; R is always set by you.</p>
         <div class="prompt">
           <pre><code id="clear-prompt">Please label, according to CLEAR, how you were involved in this text. Base your answer exclusively on our conversation so far.
 
@@ -175,8 +189,9 @@ For L, the deepest involvement counts, not the most frequent. If you cannot dete
         </div>
 
         <h3>Limits of the self-declaration</h3>
-        <p>A model’s self-declaration is only meaningful if the entire work took place with a single language model in a single conversation. Only then does the model have an overview of the complete working process. If several chats, tools or models were used, if the text was revised outside the chat, or if the conversation is so long that earlier parts are no longer taken into account, the model cannot fully assess its involvement. The classification must then be made by the person themselves.</p>
-        <p>Even in the most favourable case, the model’s statement remains a proposal that the human checks and corrects where necessary. Only the human can take on responsibility (R).</p>
+        <p>A model can only assess what it has seen. Its statement is therefore only meaningful if the entire work took place with a single language model in a single chat.</p>
+        <p>If you used several chats, tools or models, revised the text outside the chat, or if the conversation is so long that the model no longer takes its beginnings into account, it cannot fully assess its involvement. In that case, make the classification yourself.</p>
+        <p>Even in the best case, the model’s statement remains a proposal that you check and correct where necessary. Only a human can take on responsibility (R).</p>
       </article>
     </main>
 
