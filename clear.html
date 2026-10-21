@@ -103,7 +103,7 @@
             <thead><tr><th scope="col">Achse</th><th scope="col">Gegenstand</th><th scope="col">Stufen</th></tr></thead>
             <tbody>
             <tr><th scope="row"><b>C</b> – Conception</th><td>Konzeption und Gedankengang</td><td>C0 ausschliesslich menschlich · C1 KI als Gesprächspartnerin · C2 einzelne inhaltliche Teile von der KI ausgearbeitet · C3 Inhalt umfassend von der KI erzeugt</td></tr>
-            <tr><th scope="row"><b>L</b> – Language</th><td>Sprachliche Bearbeitung</td><td>L0 ohne KI · L1 Korrektorat · L2 Stillektorat · L3 Tiefenlektorat (Aufbau und Argumentation) · L4 Übersetzung</td></tr>
+            <tr><th scope="row"><b>L</b> – Language</th><td>Sprachliche Bearbeitung</td><td>L0 ohne KI · L1 Korrektorat · L2 Stillektorat · L3 Tiefenlektorat (Aufbau und Argumentation); Zusatz (t) für eine Übersetzung durch die KI</td></tr>
             <tr><th scope="row"><b>E</b> – Evidence</th><td>Quellen und ihre Verarbeitung</td><td>E0 ohne KI · E1 Quellenzugang · E2 Quellenerschliessung · E3 Quelleninterpretation · E4 Ergebnisinterpretation; Zusatz (p) publiziertes, (n) unpubliziertes Material</td></tr>
             <tr><th scope="row"><b>A</b> – Attribution</th><td>Ausweisung der Werkzeuge</td><td>eingesetzte KI-Modelle und Zeitraum der Nutzung</td></tr>
             <tr><th scope="row"><b>R</b> – Responsibility</th><td>Rechenschaft</td><td>R1 vollständig geprüft und verantwortet · R2 stichprobenartig geprüft · R3 ungeprüft veröffentlicht, mit dem Risiko, den Text trotzdem verantworten zu müssen</td></tr>
@@ -120,7 +120,7 @@
         <p><b>Ein Beispiel.</b> So ist der Text meines Buchs gekennzeichnet:</p>
         <pre><code>CLEAR (Autorin): C1, L3, E(p)1, A: Claude Opus 4.8, Fable 5, Opus 5, 04–09/2026, R1</code></pre>
         <p>Der Gedankengang ist meiner; die KI war Gesprächspartnerin (C1). Beim Schreiben hat sie auch in Aufbau und Argumentation eingegriffen (L3) und publizierte Quellen gesucht, die ich selbst gelesen habe (E(p)1). Drei Modelle waren zwischen April und September 2026 beteiligt, und ich habe jede Stelle geprüft und verantworte sie (R1).</p>
-        <p>Alle Stufen im Detail, Hinweise zur Einstufung und die Anwendung in Schulen und Hochschulen finden Sie im <a href="https://github.com/LeonieGantenbein/clear-kennzeichnung/blob/main/SPEZIFIKATION.md">Kapitel «Spezifikation»</a>. Das <a href="#factsheet">Factsheet</a> am Ende dieser Seite fasst alle Kürzel zusammen und enthält einen Prompt, mit dem ein Sprachmodell seine eigene Beteiligung vorschlägt.</p>
+        <p>Alle Stufen im Detail, Hinweise zur Einstufung und die Anwendung in Schulen und Hochschulen finden Sie im <a href="https://github.com/LeonieGantenbein/clear-kennzeichnung/blob/main/SPEZIFIKATION.md">Kapitel «Spezifikation»</a>. Im <a href="https://github.com/LeonieGantenbein/clear-kennzeichnung/blob/main/BEISPIELE.md">Kapitel «Beispiele»</a> zeigen zwanzig erfundene Fälle aus Studium, Forschung, Beruf, Öffentlichkeit und Privatleben, wie Kennzeichnungen aussehen und wie man sie liest. Das <a href="#factsheet">Factsheet</a> am Ende dieser Seite fasst alle Kürzel zusammen und enthält einen Prompt, mit dem ein Sprachmodell seine eigene Beteiligung vorschlägt.</p>
 
         <h2>Status</h2>
         <p>CLEAR ist ein Vorschlag. Er wurde noch in keiner Praxis erprobt oder ausgewertet und ist sicher noch unvollständig. Gerade deshalb freue ich mich über Rückmeldungen: Erfahrungen aus der Anwendung, Einwände und Ideen, wie sich CLEAR auf Bilder, Bewegtbilder und Code übertragen liesse. Am besten erreichen Sie mich über die <a href="https://github.com/LeonieGantenbein/clear-kennzeichnung/issues">Issues im GitHub-Repository</a>.</p>
@@ -152,7 +152,7 @@
             <tr><th scope="row">L1</th><td>Korrektorat: Rechtschreibung, Grammatik und Zeichensetzung.</td></tr>
             <tr><th scope="row">L2</th><td>Stillektorat: Formulierungen verbessert, Inhalt unverändert.</td></tr>
             <tr><th scope="row">L3</th><td>Tiefenlektorat: Eingriffe in Aufbau und Argumentation.</td></tr>
-            <tr><th scope="row">L4</th><td>Übersetzung durch die KI.</td></tr>
+            <tr><th scope="row">(t)</th><td>Von der KI übersetzt. Eine reine Übersetzung gilt bereits als Korrektorat: L(t)1.</td></tr>
             <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>E</b> – Evidence: Quellen und ihre Verarbeitung</th></tr>
             <tr><th scope="row">E0</th><td>Quellenzugang und -erschliessung ohne KI.</td></tr>
             <tr><th scope="row">E1</th><td>Quellenzugang: Die KI findet, beschafft oder übersetzt Quellen; der Mensch liest und deutet sie.</td></tr>
@@ -178,7 +178,7 @@
 Gib für jede Achse die höchste erreichte Stufe an und begründe sie in einem Satz:
 
 C – Konzeption: C0 Gedankengang ausschliesslich menschlich · C1 KI als Gesprächspartnerin · C2 einzelne inhaltliche Teile von der KI ausgearbeitet · C3 Inhalt umfassend von der KI erzeugt
-L – Sprache: L0 ohne KI · L1 Korrektorat · L2 Stillektorat (Formulierungen, Inhalt unverändert) · L3 Tiefenlektorat (Aufbau und Argumentation) · L4 Übersetzung
+L – Sprache: L0 ohne KI · L1 Korrektorat · L2 Stillektorat (Formulierungen, Inhalt unverändert) · L3 Tiefenlektorat (Aufbau und Argumentation); Zusatz (t), wenn du den Text übersetzt hast (reine Übersetzung: L(t)1)
 E – Evidenz: E0 ohne KI · E1 Quellenzugang (finden, beschaffen, übersetzen) · E2 Quellenerschliessung (Zusammenfassungen ersetzen die Primärquelle) · E3 Quelleninterpretation übernommen · E4 Schluss der KI als Ergebnis übernommen; Zusatz (p) publiziertes, (n) eigenes unpubliziertes Material
 A – Ausweisung: dein Modellname und der Zeitraum unserer Zusammenarbeit
 R – Rechenschaft: Lass R offen. Diese Angabe kann nur der Mensch machen.

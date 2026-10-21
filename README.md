@@ -34,7 +34,7 @@ Deine Adresse wird **https://leoniegantenbein.github.io**
 
 ## Inhalte ändern
 
-**Zweisprachig:** Die Seite gibt es auf Deutsch (`index.html`) und Englisch (`en/index.html`), oben rechts lässt sich umschalten. Ändere Inhalte immer in beiden Dateien. Die englische CLEAR-Angabe steht auf L4, weil die Übersetzung von einer KI stammt.
+**Zweisprachig:** Die Seite gibt es auf Deutsch (`index.html`) und Englisch (`en/index.html`), oben rechts lässt sich umschalten. Ändere Inhalte immer in beiden Dateien. Die englische CLEAR-Angabe trägt bei L den Zusatz (t), also L(t)3, weil die Übersetzung von einer KI stammt.
 
 Direkt auf GitHub: Datei `index.html` anklicken, auf das Stift-Symbol (**Edit**) klicken, Text ändern, **Commit changes**. Nach einer Minute ist die Änderung online.
 
