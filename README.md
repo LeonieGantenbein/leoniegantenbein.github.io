@@ -12,6 +12,7 @@ Eine schlichte, schnelle Website für GitHub Pages: Zur Person, Publikationen, L
 | `style.css` | Gestaltung: Farben, Schrift, Abstände |
 | `leonie-gantenbein.jpg`, `leonie-gantenbein-800.jpg` | Dein Foto, in zwei Grössen (die kleine lädt auf dem Handy schneller) |
 | `cover-….jpg` | Die Buchcover |
+| `clear-bild.png` | Das CLEAR-Bild beim Eintrag CLEAR, zugleich Vorschaubild, wenn jemand die CLEAR-Seite teilt |
 | `mail.js` | Setzt deine E-Mail-Adresse erst beim Klick zusammen, damit sie nicht offen auf der Seite steht |
 | `clear.html`, `en/clear.html` | Eigene Seite zu CLEAR, damit man es bei Google findet |
 | `sitemap.xml`, `robots.txt` | Zeigen Google, welche Seiten es gibt |
@@ -34,7 +35,7 @@ Deine Adresse wird **https://leoniegantenbein.github.io**
 
 ## Inhalte ändern
 
-**Zweisprachig:** Die Seite gibt es auf Deutsch (`index.html`) und Englisch (`en/index.html`), oben rechts lässt sich umschalten. Ändere Inhalte immer in beiden Dateien. Die englische CLEAR-Angabe trägt bei L den Zusatz (t), also L(t)3, weil die Übersetzung von einer KI stammt.
+**Zweisprachig:** Die Seite gibt es auf Deutsch (`index.html`) und Englisch (`en/index.html`), oben rechts lässt sich umschalten. Ändere Inhalte immer in beiden Dateien. Die englische CLEAR-Angabe trägt bei L den Zusatz (t), also L(t)4, weil die Übersetzung von einer KI stammt.
 
 Direkt auf GitHub: Datei `index.html` anklicken, auf das Stift-Symbol (**Edit**) klicken, Text ändern, **Commit changes**. Nach einer Minute ist die Änderung online.
 

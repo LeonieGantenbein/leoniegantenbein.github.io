@@ -363,6 +363,8 @@ cite { font-style: italic; }
   border-radius: 1px;
   box-shadow: 0 0 0 1px rgba(28, 42, 74, 0.1);
 }
+/* Querformat (CLEAR-Bild): nutzt die ganze Randbreite */
+.cover--quer { max-width: 100%; }
 
 .eintrag__titel {
   font-size: 1.45rem;
@@ -512,6 +514,7 @@ cite { font-style: italic; }
   .eintrag .rand p + p { margin-top: 0; }
   .cover { flex: 0 0 100%; max-width: none; margin-bottom: 0.9rem; }
   .cover img { width: 7.5rem; }
+  .cover--quer img { width: 13rem; }
   .eintrag .rand p:not(:last-child)::after { content: ",\00a0"; }
 
   /* Kurzbiografie steht auf dem Handy unter dem Fliesstext */
