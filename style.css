@@ -228,23 +228,25 @@ cite { font-style: italic; }
 }
 .rand p + p { margin-top: 0.75rem; }
 
-/* Foto über die ganze Breite, Bildnotiz im Rand */
+/* Foto auf dem schwarzen Rahmen, so breit wie das Blatt darunter */
 .bild {
-  row-gap: 0.6rem;
-  margin-bottom: 2.75rem;
+  margin: 0 calc(-1 * var(--blatt-rand)) clamp(2rem, 4vw, 2.75rem);
 }
 .bild__foto {
-  grid-column: 1 / -1;
   display: block;
   width: 100%;
   height: auto;
   aspect-ratio: 2 / 1;
   object-fit: cover;
   object-position: 70% 35%;
-  border-radius: 2px;
   background: #15171c;
 }
-.bild__notiz { font-style: italic; }
+.bild__notiz {
+  padding: 0.6rem var(--blatt-rand) 0;
+  color: var(--graphit);
+  font-size: 0.9375rem;
+  font-style: italic;
+}
 
 .rand__liste {
   list-style: none;
@@ -342,6 +344,22 @@ cite { font-style: italic; }
 .abschnitt aside.rand { padding-bottom: 2.25rem; }
 .prosa p + p { margin-top: 1.1em; }
 .prosa p { max-width: 36em; }
+
+/* Blocksatz mit Silbentrennung für den Fliesstext */
+.prosa p,
+.eintrag__text {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+.prosa .dokument__achsen,
+.prosa .dokument__byline,
+.prosa .dokument__label,
+.prosa .dokument__zitat {
+  text-align: left;
+  -webkit-hyphens: manual;
+  hyphens: manual;
+}
 
 /* Ein Eintrag: Rand (Jahr, Verlag, Datum) + Inhalt */
 .eintrag {
@@ -568,6 +586,7 @@ body { background: var(--nacht); }
 .blatt > .abschnitt:first-child { border-top: 0; }
 
 .eroeffnung { padding-bottom: clamp(3.5rem, 8vw, 5.5rem); }
+.bild + .blatt > .abschnitt:first-child { padding-top: 3rem; }
 
 .fuss {
   margin-top: 0;
@@ -692,3 +711,6 @@ body { background: var(--nacht); }
 }
 .dokument__liste { margin: -0.4em 0 1.1em; padding-left: 1.25rem; }
 .dokument__liste li + li { margin-top: 0.25rem; }
+
+/* Eigennamen wie CLEAR und PISCATOR werden nicht getrennt */
+.eigenname { -webkit-hyphens: manual; hyphens: manual; }
