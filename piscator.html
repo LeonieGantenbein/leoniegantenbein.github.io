@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PISCATOR – Kennzeichnung von KI-Beteiligung in der Forschung | Leonie Gantenbein</title>
+  <meta name="description" content="PISCATOR ist ein Vorschlag von Leonie Gantenbein, die Beteiligung künstlicher Intelligenz an empirischer Forschung offenzulegen: acht Angaben zu Personenbezug, Infrastruktur, Code, Konzeption, Werkzeugen, Aufbereitung, Herkunft der Daten und Prüfung. PISCATOR ergänzt CLEAR.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="PISCATOR – Kennzeichnung von KI-Beteiligung in der Forschung | Leonie Gantenbein">
+  <meta property="og:description" content="PISCATOR ist ein Vorschlag von Leonie Gantenbein, die Beteiligung künstlicher Intelligenz an empirischer Forschung offenzulegen: acht Angaben zu Personenbezug, Infrastruktur, Code, Konzeption, Werkzeugen, Aufbereitung, Herkunft der Daten und Prüfung. PISCATOR ergänzt CLEAR.">
+  <meta property="og:image" content="https://leoniegantenbein.github.io/piscator-bild.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta property="og:image:alt" content="PISCATOR: Privacy, Infrastructure, Script, Conception, Attribution, Transformation, Origin, Responsibility">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://leoniegantenbein.github.io/piscator.html">
+  <link rel="alternate" hreflang="de" href="https://leoniegantenbein.github.io/piscator.html">
+  <link rel="alternate" hreflang="en" href="https://leoniegantenbein.github.io/en/piscator.html">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231c2a4a'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-style='italic' font-size='38' text-anchor='middle' fill='%23eceee8'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/literata-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "https://leoniegantenbein.github.io/piscator.html#piscator",
+  "name": "PISCATOR – Kennzeichnung von KI-Beteiligung in der Forschung",
+  "alternateName": "PISCATOR – Labelling AI Involvement in Research",
+  "description": "PISCATOR ist ein Vorschlag von Leonie Gantenbein, die Beteiligung künstlicher Intelligenz an empirischer Forschung offenzulegen: acht Angaben zu Personenbezug, Infrastruktur, Code, Konzeption, Werkzeugen, Aufbereitung, Herkunft der Daten und Prüfung.",
+  "version": "1.0",
+  "dateCreated": "2026",
+  "inLanguage": [
+    "de",
+    "en"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://leoniegantenbein.github.io/piscator.html",
+  "sameAs": [
+    "https://github.com/LeonieGantenbein/piscator-kennzeichnung"
+  ],
+  "author": {
+    "@type": "Person",
+    "@id": "https://leoniegantenbein.github.io/#person",
+    "name": "Leonie Gantenbein",
+    "url": "https://leoniegantenbein.github.io/"
+  },
+  "keywords": [
+    "PISCATOR",
+    "CLEAR",
+    "KI-Kennzeichnung",
+    "AI disclosure",
+    "Forschungsdaten",
+    "Open Science",
+    "Datenschutz"
+  ],
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "@id": "https://leoniegantenbein.github.io/clear.html#clear",
+    "name": "CLEAR – Kennzeichnung von KI-Beteiligung an Texten",
+    "url": "https://leoniegantenbein.github.io/clear.html"
+  }
+}
+  </script>
+</head>
+
+<!-- PISCATOR-Unterseite (de). Gegenstück zu clear.html. Der Text folgt der README
+     im Repository piscator-kennzeichnung. Wenn du hier etwas änderst, passe es dort
+     und in en/piscator.html ebenfalls an. -->
+
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <div class="seite">
+
+    <header class="kopf raster nacht">
+      <a class="kopf__name rand" href="index.html">Dr. phil. Leonie Gantenbein</a>
+      <nav class="kopf__nav text" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="index.html">Zur Startseite</a></li>
+          <li><a href="clear.html">CLEAR</a></li>
+          <li class="kopf__sprache"><a href="en/piscator.html" lang="en" hreflang="en">English</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="unterseite raster blatt" id="inhalt">
+      <article class="text prosa dokument">
+        <h1>PISCATOR <span class="dokument__untertitel">Kennzeichnung von KI-Beteiligung in der Forschung</span></h1>
+        <p class="dokument__achsen"><i>Privacy · Infrastructure · Script · Conception · Attribution · Transformation · Origin · Responsibility</i></p>
+        <p class="dokument__byline">Leonie Gantenbein · Version 1.0 · 2026 · Lizenz <a href="https://creativecommons.org/licenses/by/4.0/legalcode.de">CC BY 4.0</a></p>
+
+        <p>In der empirischen Forschung ist KI oft beteiligt, lange bevor ein Text entsteht. Sie transkribiert Interviews, kodiert offene Antworten, schreibt Auswertungscode, erzeugt synthetische Daten oder wird selbst als Modell trainiert. Sie läuft auf dem eigenen Rechner, auf Servern der Hochschule oder bei externen Anbietern. Wer ein Ergebnis beurteilen will, muss das wissen. Und für die Menschen, deren Daten verarbeitet wurden, macht es einen Unterschied, wo das geschah.</p>
+        <p><a href="clear.html">CLEAR</a> kennzeichnet, wie KI an einem Text beteiligt war. PISCATOR kennzeichnet, wie sie an der Forschung beteiligt war, auf der ein Text beruht. Acht kurze Angaben halten fest, wie weit die Daten auf Personen verweisen, wo die KI lief, was sie zum Code beitrug, wer Fragestellung und Design entwickelt hat, welche Modelle und Werkzeuge im Einsatz waren, was die KI mit den Daten getan hat, woher die Daten stammen und wer die Ergebnisse der KI geprüft hat.</p>
+        <p>Vorbild ist die Fangmeldung. Sie hält in wenigen festen Angaben fest, was, wo, womit und wann gefangen wurde. Sie ist knapp und standardisiert, und gerade deshalb wird sie im Alltag tatsächlich ausgefüllt. PISCATOR soll ebenso einfach sein: ein Einzeiler, der im Methodenteil Platz findet.</p>
+        <p>Eine solche Angabe beansprucht nicht, ein Ergebnis zu beglaubigen. Ludwik Fleck und Thomas S. Kuhn haben gezeigt, dass wissenschaftliches Wissen nicht einfach anwächst, bis alles aufgedeckt ist. Es entsteht in Denkstilen und Paradigmen, mit bestimmten Instrumenten und Verfahren. PISCATOR macht sichtbar, welche dieser Verfahren eine KI mitgetragen hat. Das hilft, einen Befund einzuordnen, nachzuvollziehen und, wo möglich, zu wiederholen.</p>
+        <p>Wer wissenschaftlich publiziert, gibt beide Angaben an: PISCATOR für den Forschungsprozess, CLEAR für den Text.</p>
+        <aside class="dokument__notiz">
+          <p><b>Zwei Angaben, ein Prinzip.</b> PISCATOR übernimmt von CLEAR die Logik, drei Buchstaben und die Zusätze (p), (n) und (t): Sie bedeuten in beiden dasselbe. Wer CLEAR kennt, kann PISCATOR lesen. Und wie bei CLEAR gilt: Verantwortlich für ein Ergebnis bleibt, wer es veröffentlicht, nicht die KI.</p>
+        </aside>
+
+        <h2>Für welche Forschung</h2>
+        <p>PISCATOR richtet sich an empirische Forschung, die Daten erhebt, aufbereitet, kodiert oder mit Code auswertet, quantitativ wie qualitativ: Interviewstudien und Befragungen, Experimente und Messreihen, Korpus- und Archivarbeit, Modellierungen und Simulationen. Arbeiten ohne eigene Datenverarbeitung, etwa theoretische, historische oder hermeneutische, kennzeichnen ihren Text mit CLEAR. Eine PISCATOR-Angabe ist dort nicht nötig.</p>
+        <p>Oft betrifft eine Studie nur einen Teil der Angaben. Was in einer Forschung nicht vorkommt, wird mit X markiert: SX heisst, es gibt keinen Code. Das ist etwas anderes als S0: Dort gibt es Code, aber er wurde ohne KI geschrieben. X ist keine Lücke, sondern eine Auskunft.</p>
+
+        <h2>Kurzreferenz</h2>
+        <p>Die acht Angaben auf einen Blick:</p>
+        <div class="tabelle">
+          <table>
+            <thead><tr><th scope="col">Achse</th><th scope="col">Gegenstand</th><th scope="col">Angabe</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><b>P</b> – Privacy</th><td>Personenbezug der Daten, die eine KI verarbeitet hat</td><td>P0 kein Personenbezug · P1 anonymisiert · P2 pseudonymisiert · P3 identifizierbar; Zusatz (s) für besonders schützenswerte Daten; Zugänglichkeit (p) veröffentlicht · (r) eingeschränkt · (e) geplant · (n) nicht veröffentlicht</td></tr>
+            <tr><th scope="row"><b>I</b> – Infrastructure</th><td>Wo die KI lief, die Zugriff auf die Daten hatte</td><td>I0 lokal · I1 geschützte Infrastruktur der Institution · I2 externer Dienst mit Auftragsbearbeitungsvertrag · I3 externer Dienst nur mit allgemeinen Nutzungsbedingungen; Zusatz: Land des Serverstandorts, etwa (CH)</td></tr>
+            <tr><th scope="row"><b>S</b> – Script</th><td>KI beim Programmieren</td><td>S0 ohne KI · S1 Hilfe · S2 Teile generiert · S3 weitgehend generiert · S4 vollständig generiert; Zugänglichkeit von Code und Prompts wie bei P</td></tr>
+            <tr><th scope="row"><b>C</b> – Conception</th><td>Fragestellung, Hypothesen, Design, Instrumente</td><td>C0 ausschliesslich menschlich · C1 KI als Gesprächspartnerin · C2 einzelne Teile von der KI ausgearbeitet · C3 umfassend von der KI erzeugt</td></tr>
+            <tr><th scope="row"><b>A</b> – Attribution</th><td>Ausweisung der Werkzeuge</td><td>Modelle und Werkzeuge mit Version, Anbieter und Art der Nutzung (angewendet, angepasst, trainiert), Programmiersprachen, Zeitraum</td></tr>
+            <tr><th scope="row"><b>T</b> – Transformation</th><td>Was die KI mit den Daten getan hat</td><td>(co) Erhebung · (ts) Transkription · (oc) Texterkennung · (t) Übersetzung · (ps) Pseudonymisierung · (cl) Bereinigung · (im) Imputation · (li) Verknüpfung · (ex) Extraktion · (su) Zusammenfassung · (an) Kodierung · (mo) Modellierung; T0 ohne KI</td></tr>
+            <tr><th scope="row"><b>O</b> – Origin</th><td>Herkunft und Form der Daten</td><td>O0 nur selbst erhoben · O1 selbst erhoben und nachgenutzt · O2 nur nachgenutzt; Formen (or) original · (sc) scrambled · (ag) aggregiert · (sy) synthetisch · (si) simuliert · (au) augmentiert</td></tr>
+            <tr><th scope="row"><b>R</b> – Responsibility</th><td>Prüfung der KI-Ergebnisse</td><td>R1 vollständig geprüft und verantwortet · R2 stichprobenartig geprüft · R3 ungeprüft; Zusatz (v) systematisch validiert</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <pre><code>PISCATOR (Rolle): P(…)?, I(…)?, S(…)?, C?, A: Modelle, Sprachen, Zeitraum, T(…), O(…)?, R(…)?</code></pre>
+        <p><b>Regeln.</b></p>
+        <ul class="dokument__liste">
+          <li>Zusätze stehen wie bei CLEAR vor der Zahl: P(s, n)3, I(CH)2, S(p)2, O(or, sy)0, R(v)2.</li>
+          <li>Bei P, I, S, C und R steht die höchste erreichte Stufe. Bei T und den Formen von O stehen alle zutreffenden Kürzel.</li>
+          <li>X steht, wenn etwas in der Forschung nicht vorkommt: SX ohne Code; PX, TX und OX ohne Daten; IX, wenn keine KI Zugriff auf die Daten hatte.</li>
+          <li>Zu I zählt jede KI mit Zugriff auf die Daten, auch ein Codeassistent, der Datendateien lesen kann. Massgebend ist, wo das Modell tatsächlich läuft, nicht wo ein Programm installiert ist.</li>
+          <li>Unterscheiden sich Arbeitsschritte stark in Personenbezug oder Infrastruktur, erhält jeder Schritt eine eigene Zeile, etwa «PISCATOR (Projektteam, Training)».</li>
+          <li>In Klammern steht, wer die Angabe macht und verantwortet: eine Person, ein Projektteam oder ein Labor.</li>
+        </ul>
+        <p><b>Wo die Kennzeichnung steht.</b></p>
+        <ul class="dokument__liste">
+          <li>Artikel und Buch: im Methodenteil oder bei den Angaben zur Datenverfügbarkeit</li>
+          <li>Daten- und Code-Repository: im README</li>
+          <li>Abschlussarbeit: neben der Selbständigkeitserklärung</li>
+          <li>Datenmanagementplan und Forschungsantrag: als geplante Nutzung</li>
+        </ul>
+        <p>Die CLEAR-Zeile steht wie gewohnt am Schluss des Textes oder im Impressum.</p>
+
+        <h2>Zwei Beispiele</h2>
+        <p><b>Interviewstudie.</b> Eine Soziologin führt zwanzig Interviews zum Leben mit einer chronischen Erkrankung. Sie transkribiert die Aufnahmen mit noScribe auf dem eigenen Rechner und prüft jedes Transkript gegen die Aufnahme. Kodiert wird von Hand, Skripte gibt es keine. Die Daten werden nicht veröffentlicht.</p>
+        <pre><code>PISCATOR (Autorin): P(s, n)3, I0, SX, C0, A: noScribe (Whisper large-v3, angewendet), 03–09/2026, T(ts), O(or)0, R1</code></pre>
+        <p>Identifizierbare Gesundheitsdaten, nicht veröffentlicht (P(s, n)3), aber nur lokal verarbeitet (I0). Code gibt es keinen (SX). Die KI hat ausschliesslich transkribiert (T(ts)), und zwar selbst erhobene Originaldaten (O(or)0). Jedes Transkript wurde geprüft (R1).</p>
+        <p><b>Befragung mit synthetischer Fassung.</b> Ein Projektteam wertet eine eigene Befragung aus. Die pseudonymisierten Daten liegen auf einem Server der Hochschule. Dort kodiert ein Sprachmodell die offenen Antworten; 10 % werden von Hand nachkodiert und die Übereinstimmung berechnet. Die Hypothesen hat das Team mit einer KI diskutiert. Teile des Auswertungscodes schreibt ein Codeassistent, der keinen Zugriff auf die Daten hat. Ein auf den Befragungsdaten trainiertes Modell erzeugt eine synthetische Fassung, die veröffentlicht wird; die Originaldaten gibt es auf Anfrage.</p>
+        <pre><code>PISCATOR (Projektteam): P(p, r)2, I1, S(p)2, C1, A: Llama 3.3 70B (angewendet), SDV CTGAN (trainiert auf den Befragungsdaten), Claude Code (Anthropic), Python 3.13, 02–07/2026, T(an), O(or, sy)0, R(v)2</code></pre>
+        <p>Pseudonymisierte Daten (P2), synthetisch offen und im Original auf Anfrage zugänglich (p, r). Alles lief auf der Infrastruktur der Hochschule (I1); der Codeassistent zählt bei I nicht, weil er die Daten nie gesehen hat. Teile des Codes sind generiert, Code und Prompts veröffentlicht (S(p)2). Das Sprachmodell hat kodiert (T(an)), systematisch validiert an einer Stichprobe (R(v)2). Aus selbst erhobenen Originaldaten entstand eine synthetische Fassung (O(or, sy)0).</p>
+        <p>Weitere Beispiele, etwa ein Modell, das in zwei Schritten trainiert und angewendet wird, und eine Auswertung im Chat, stehen mit allen Erklärungen im <a href="https://github.com/LeonieGantenbein/piscator-kennzeichnung/blob/main/SPEZIFIKATION.md">Kapitel «Spezifikation»</a>.</p>
+
+        <h2>Zusammen mit CLEAR</h2>
+        <p>In einer Publikation stehen beide Angaben, PISCATOR im Methodenteil, CLEAR am Schluss. Für die Interviewstudie sähe das so aus:</p>
+        <pre><code>CLEAR (Autorin): C0, L2, E(n)1, A: noScribe (Whisper large-v3), ChatGPT (GPT-5), 03–10/2026, R1
+PISCATOR (Autorin): P(s, n)3, I0, SX, C0, A: noScribe (Whisper large-v3, angewendet), 03–09/2026, T(ts), O(or)0, R1</code></pre>
+        <p>CLEAR sagt, wie der Text entstanden ist: Der Gedankengang ist der eigene, die KI hat die Sprache geglättet und eigenes, unpubliziertes Material zugänglich gemacht. PISCATOR sagt genauer, was dabei mit den Daten geschah. Bei CLEAR bezieht sich C auf den Gedankengang des Textes, bei PISCATOR auf Fragestellung und Design der Forschung.</p>
+
+        <h2>Status</h2>
+        <p>PISCATOR ist ein Vorschlag. Er baut auf CLEAR auf, wurde aber noch in keiner Praxis erprobt und ist sicher noch unvollständig. Rückmeldungen aus Forschung, Datenmanagement und Ethikkommissionen sind willkommen, am besten über die <a href="https://github.com/LeonieGantenbein/piscator-kennzeichnung/issues">Issues im GitHub-Repository</a>.</p>
+
+        <h2>Zum Namen</h2>
+        <p>Piscator ist lateinisch und heisst Fischer, daher das Vorbild der Fangmeldung. Der Name erinnert zudem an den Fischerring, den <i lang="la">Anulus Piscatoris</i>, mit dem päpstliche Dokumente bis 1842 gesiegelt wurden. Ein Siegel macht sichtbar, wer für ein Dokument einsteht. Diese Aufgabe übernimmt bei PISCATOR wie bei CLEAR die Angabe R.</p>
+
+        <h2>Zitieren</h2>
+        <p>Wenn Sie PISCATOR verwenden oder weiterentwickeln, zitieren Sie bitte:</p>
+        <p class="dokument__zitat">Gantenbein, Leonie (2026): PISCATOR – Kennzeichnung von KI-Beteiligung in der Forschung. Version 1.0. https://github.com/LeonieGantenbein/piscator-kennzeichnung</p>
+
+        <h2 id="factsheet">Factsheet</h2>
+        <p>Das Factsheet fasst alle Kürzel und Regeln auf einer Seite zusammen. Sie können es zum Nachschlagen nutzen oder einem Sprachmodell übergeben, damit es eine PISCATOR-Angabe für ein Forschungsprojekt vorschlägt. Ausführliche Erklärungen zu jeder Achse stehen in der <a href="https://github.com/LeonieGantenbein/piscator-kennzeichnung/blob/main/SPEZIFIKATION.md">Spezifikation</a>.</p>
+        <p class="dokument__label">Notation</p>
+        <pre><code>PISCATOR (Rolle): P(…)?, I(…)?, S(…)?, C?, A: Modelle, Sprachen, Zeitraum, T(…), O(…)?, R(…)?</code></pre>
+        <div class="tabelle tabelle--kuerzel">
+          <table>
+            <thead><tr><th scope="col">Kürzel</th><th scope="col">Bedeutung</th></tr></thead>
+            <tbody>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>P</b> – Privacy: Personenbezug der Daten, die eine KI verarbeitet hat</th></tr>
+            <tr><th scope="row">P0</th><td>Kein Personenbezug.</td></tr>
+            <tr><th scope="row">P1</th><td>Anonymisiert.</td></tr>
+            <tr><th scope="row">P2</th><td>Pseudonymisiert: über einen Schlüssel zuzuordnen, auch wenn ihn Dritte halten.</td></tr>
+            <tr><th scope="row">P3</th><td>Identifizierbar (Klardaten).</td></tr>
+            <tr><th scope="row">(s)</th><td>Besonders schützenswerte Daten (<i lang="en">sensitive</i>), nach Art. 5 lit. c DSG und Art. 9 DSGVO.</td></tr>
+            <tr><th scope="row">(p)</th><td>Daten veröffentlicht, offen zugänglich.</td></tr>
+            <tr><th scope="row">(r)</th><td>Daten eingeschränkt zugänglich: auf Anfrage oder mit kontrolliertem Zugang.</td></tr>
+            <tr><th scope="row">(e)</th><td>Veröffentlichung geplant, etwa nach einer Sperrfrist.</td></tr>
+            <tr><th scope="row">(n)</th><td>Daten nicht veröffentlicht.</td></tr>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>I</b> – Infrastructure: wo die KI lief, die Zugriff auf die Daten hatte</th></tr>
+            <tr><th scope="row">I0</th><td>Lokal, auf dem eigenen Rechner.</td></tr>
+            <tr><th scope="row">I1</th><td>Geschützte Infrastruktur der eigenen Institution.</td></tr>
+            <tr><th scope="row">I2</th><td>Externer Dienst mit Auftragsbearbeitungsvertrag.</td></tr>
+            <tr><th scope="row">I3</th><td>Externer Dienst nur mit allgemeinen Nutzungsbedingungen.</td></tr>
+            <tr><th scope="row">(CH) …</th><td>Land des Serverstandorts, etwa (CH), (DE), (EU), (US).</td></tr>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>S</b> – Script: KI beim Programmieren</th></tr>
+            <tr><th scope="row">S0</th><td>Ohne KI.</td></tr>
+            <tr><th scope="row">S1</th><td>Hilfe: Vervollständigung, Fehlersuche, Erklärung.</td></tr>
+            <tr><th scope="row">S2</th><td>Teile generiert.</td></tr>
+            <tr><th scope="row">S3</th><td>Weitgehend generiert, vom Menschen gelesen und überarbeitet.</td></tr>
+            <tr><th scope="row">S4</th><td>Vollständig generiert, ohne dass ein Mensch den Code gelesen hat.</td></tr>
+            <tr><th scope="row">(p) (r) (e) (n)</th><td>Zugänglichkeit von Code und Prompts, wie bei P.</td></tr>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>C</b> – Conception: Fragestellung, Hypothesen, Design, Instrumente</th></tr>
+            <tr><th scope="row">C0</th><td>Ausschliesslich menschlich.</td></tr>
+            <tr><th scope="row">C1</th><td>KI als Gesprächspartnerin.</td></tr>
+            <tr><th scope="row">C2</th><td>Einzelne Teile von der KI ausgearbeitet.</td></tr>
+            <tr><th scope="row">C3</th><td>Umfassend von der KI erzeugt.</td></tr>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>A</b> – Attribution: Modelle und Werkzeuge mit Version, Anbieter und Art der Nutzung (angewendet, angepasst, trainiert), Programmiersprachen, Zeitraum</th></tr>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>T</b> – Transformation: was die KI mit den Daten getan hat</th></tr>
+            <tr><th scope="row">T0</th><td>Erhebung und Aufbereitung ohne KI.</td></tr>
+            <tr><th scope="row">(co)</th><td>Erhebung: Interviews, Befragungen, Datensammlung durch KI.</td></tr>
+            <tr><th scope="row">(ts)</th><td>Transkription.</td></tr>
+            <tr><th scope="row">(oc)</th><td>Text- und Handschriftenerkennung.</td></tr>
+            <tr><th scope="row">(t)</th><td>Übersetzung, wie L(t) bei CLEAR.</td></tr>
+            <tr><th scope="row">(ps)</th><td>Pseudonymisierung: Namen und Merkmale ersetzt oder entfernt.</td></tr>
+            <tr><th scope="row">(cl)</th><td>Bereinigung.</td></tr>
+            <tr><th scope="row">(im)</th><td>Imputation fehlender Werte.</td></tr>
+            <tr><th scope="row">(li)</th><td>Verknüpfung von Datensätzen.</td></tr>
+            <tr><th scope="row">(ex)</th><td>Extraktion von Angaben aus Dokumenten.</td></tr>
+            <tr><th scope="row">(su)</th><td>Zusammenfassung, mit der weitergearbeitet wird.</td></tr>
+            <tr><th scope="row">(an)</th><td>Kodierung, Klassifikation, Annotation.</td></tr>
+            <tr><th scope="row">(mo)</th><td>Modellierung: Die KI erzeugt selbst Befunde.</td></tr>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>O</b> – Origin: Herkunft und Form der Daten</th></tr>
+            <tr><th scope="row">O0</th><td>Nur selbst erhoben oder erzeugt.</td></tr>
+            <tr><th scope="row">O1</th><td>Selbst erhoben und nachgenutzt.</td></tr>
+            <tr><th scope="row">O2</th><td>Nur nachgenutzt.</td></tr>
+            <tr><th scope="row">(or)</th><td>Original.</td></tr>
+            <tr><th scope="row">(sc)</th><td>Scrambled: Werte vertauscht, maskiert oder verrauscht.</td></tr>
+            <tr><th scope="row">(ag)</th><td>Aggregiert.</td></tr>
+            <tr><th scope="row">(sy)</th><td>Synthetisch.</td></tr>
+            <tr><th scope="row">(si)</th><td>Simuliert oder modellgeneriert.</td></tr>
+            <tr><th scope="row">(au)</th><td>Augmentiert.</td></tr>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>R</b> – Responsibility: Rechenschaft</th></tr>
+            <tr><th scope="row">R1</th><td>Vollständig geprüft und vom Menschen verantwortet.</td></tr>
+            <tr><th scope="row">R2</th><td>Stichprobenartig geprüft.</td></tr>
+            <tr><th scope="row">R3</th><td>Ungeprüft verwendet, mit dem Risiko, es trotzdem verantworten zu müssen.</td></tr>
+            <tr><th scope="row">(v)</th><td>Systematisch validiert, Verfahren und Kennzahlen dokumentiert.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Prompt für die Selbstauskunft eines Sprachmodells</h3>
+        <p>Ein Sprachmodell kann eine PISCATOR-Angabe vorschlagen. Kopieren Sie dazu den folgenden Text in den Chat, in dem Sie am Projekt gearbeitet haben. Das Modell schlägt vor, was es aus dem Verlauf ableiten kann, und fragt nach dem Rest. R setzen immer Sie.</p>
+        <div class="prompt">
+          <pre><code id="piscator-prompt">Bitte kennzeichne nach PISCATOR, wie KI an diesem Forschungsprojekt beteiligt war. Stütze dich auf unseren bisherigen Chatverlauf. Was du daraus nicht sicher ableiten kannst, erfragst du bei mir, statt zu raten. Das gilt vor allem für P, I und O.
+
+Gib für jede Achse die zutreffende Angabe an und begründe sie in einem Satz. X heisst: kommt in diesem Projekt nicht vor.
+
+P – Privacy (Personenbezug der Daten, die eine KI verarbeitet hat): P0 kein Personenbezug · P1 anonymisiert · P2 pseudonymisiert · P3 identifizierbar; Zusätze (s) besonders schützenswert · (p) veröffentlicht · (r) eingeschränkt zugänglich · (e) Veröffentlichung geplant · (n) nicht veröffentlicht
+I – Infrastructure (wo die KI mit Zugriff auf die Daten lief): I0 lokal · I1 geschützte Infrastruktur der Institution · I2 externer Dienst mit Auftragsbearbeitungsvertrag · I3 externer Dienst nur mit allgemeinen Nutzungsbedingungen; Zusatz: Land des Serverstandorts, etwa (CH)
+S – Script (KI beim Programmieren): S0 ohne KI · S1 Hilfe · S2 Teile generiert · S3 weitgehend generiert, vom Menschen gelesen · S4 vollständig generiert, ohne den Code zu lesen; Zusätze (p) (r) (e) (n) für Code und Prompts
+C – Conception (Fragestellung, Hypothesen, Design, Instrumente): C0 ausschliesslich menschlich · C1 KI als Gesprächspartnerin · C2 einzelne Teile von der KI ausgearbeitet · C3 umfassend von der KI erzeugt
+A – Attribution: Modelle und Werkzeuge mit Version, Anbieter und Art der Nutzung (angewendet, angepasst, trainiert), Programmiersprachen, Zeitraum
+T – Transformation (was die KI mit den Daten tat): (co) Erhebung · (ts) Transkription · (oc) Texterkennung · (t) Übersetzung · (ps) Pseudonymisierung · (cl) Bereinigung · (im) Imputation · (li) Verknüpfung · (ex) Extraktion · (su) Zusammenfassung · (an) Kodierung · (mo) Modellierung; T0 ohne KI
+O – Origin: O0 nur selbst erhoben · O1 selbst erhoben und nachgenutzt · O2 nur nachgenutzt; Formen (or) original · (sc) scrambled · (ag) aggregiert · (sy) synthetisch · (si) simuliert · (au) augmentiert
+R – Responsibility: Lass R offen. Diese Angabe kann nur der Mensch machen.
+
+Format: PISCATOR (Rolle): P(…)?, I(…)?, S(…)?, C?, A: …, T(…), O(…)?, R?
+Zusätze stehen vor der Zahl, etwa P(s, n)3 oder O(or, sy)0. Unterscheiden sich Arbeitsschritte stark in Personenbezug oder Infrastruktur, schlage je Schritt eine eigene Zeile vor.</code></pre>
+          <button type="button" class="prompt__knopf" data-ziel="piscator-prompt" data-fertig="Kopiert">Prompt kopieren</button>
+        </div>
+
+        <h3>Grenzen der Selbstauskunft</h3>
+        <p>Ein Modell kann nur beurteilen, was es gesehen hat. Bei PISCATOR ist das noch weniger als bei CLEAR: Wo Daten gespeichert sind, ob sie pseudonymisiert wurden und welche Verträge bestehen, steht selten im Chat. Das Modell soll deshalb nachfragen, und die Antworten kommen von Ihnen.</p>
+        <p>Ein Forschungsprojekt läuft zudem selten in einem einzigen Chat. Haben Sie mehrere Chats, Werkzeuge oder Modelle verwendet, kann das Modell nur einen Teil beurteilen. Nehmen Sie die Einstufung dann selbst vor.</p>
+        <p>Auch im besten Fall bleibt die Angabe des Modells ein Vorschlag, den Sie prüfen und, wo nötig, korrigieren. Die Rechenschaft (R) kann nur ein Mensch übernehmen.</p>
+      </article>
+    </main>
+
+    <footer class="fuss raster nacht">
+      <p class="rand">© 2026 Leonie Gantenbein</p>
+      <div class="text">
+        <p><a href="index.html">Zur Startseite</a></p>
+        <p><a href="impressum.html">Impressum und Datenschutz</a></p>
+      </div>
+      <p class="rand">KI-Beteiligung</p>
+      <div class="text clear-angabe">
+        <p class="clear-angabe__zeile">Fassung dieser Seite: CLEAR (Leonie Gantenbein): C1, L4, E(p)2, A: Claude Opus 5.5, 11/2026, R1</p>
+        <p class="clear-angabe__zeile">PISCATOR entfällt: Diese Seite beruht nicht auf eigener Datenverarbeitung.</p>
+      </div>
+    </footer>
+
+  </div>
+  <script>
+    document.querySelectorAll(".prompt__knopf").forEach(function (knopf) {
+      var text = knopf.textContent;
+      knopf.addEventListener("click", function () {
+        var ziel = document.getElementById(knopf.dataset.ziel);
+        navigator.clipboard.writeText(ziel.textContent).then(function () {
+          knopf.textContent = knopf.dataset.fertig;
+          setTimeout(function () { knopf.textContent = text; }, 2000);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

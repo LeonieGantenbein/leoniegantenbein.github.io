@@ -632,7 +632,7 @@ body { background: var(--nacht); }
   white-space: pre-wrap;
 }
 .dokument code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
-.dokument__zitat { font-size: 1rem; }
+.dokument__zitat { font-size: 1rem; overflow-wrap: anywhere; }
 
 .tabelle { overflow-x: auto; margin: 0.5rem 0 1.25rem; }
 .tabelle table {

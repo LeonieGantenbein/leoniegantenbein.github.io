@@ -13,8 +13,10 @@ Eine schlichte, schnelle Website für GitHub Pages: Zur Person, Publikationen, L
 | `leonie-gantenbein.jpg`, `leonie-gantenbein-800.jpg` | Dein Foto, in zwei Grössen (die kleine lädt auf dem Handy schneller) |
 | `cover-….jpg` | Die Buchcover |
 | `clear-bild.png` | Das CLEAR-Bild beim Eintrag CLEAR, zugleich Vorschaubild, wenn jemand die CLEAR-Seite teilt |
+| `piscator-bild.png` | Das PISCATOR-Bild beim Eintrag PISCATOR, zugleich Vorschaubild für die PISCATOR-Seite |
 | `mail.js` | Setzt deine E-Mail-Adresse erst beim Klick zusammen, damit sie nicht offen auf der Seite steht |
 | `clear.html`, `en/clear.html` | Eigene Seite zu CLEAR, damit man es bei Google findet |
+| `piscator.html`, `en/piscator.html` | Seite zu PISCATOR, dem Gegenstück zu CLEAR für die Forschung |
 | `sitemap.xml`, `robots.txt` | Zeigen Google, welche Seiten es gibt |
 | `fonts/` | Die Schrift Literata (frei nutzbar, SIL Open Font License) |
 
