@@ -35,6 +35,57 @@
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
+/* EB Garamond für die Artikelseiten (CLEAR, PISCATOR), wie in den PDF-Fassungen.
+   Lizenz: SIL Open Font License, siehe fonts/OFL-EBGaramond.txt */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/eb-garamond-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/eb-garamond-latin-ext-400-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/eb-garamond-latin-400-italic.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/eb-garamond-latin-ext-400-italic.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/eb-garamond-latin-700-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/eb-garamond-latin-ext-700-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 /* ------------------------------------------------------------
    Farben: Tinte auf kühlem Papier. Hier zentral änderbar.
 ------------------------------------------------------------ */
@@ -619,83 +670,176 @@ body { background: var(--nacht); }
 }
 
 /* ------------------------------------------------------------
-   Dokumentseite (CLEAR)
+   Artikelseiten (CLEAR, PISCATOR) im Satz der PDF-Fassung:
+   EB Garamond, Blocksatz, Erstzeileneinzug, zentrierter Titelblock.
+   Links, Sprungmarken und der Kopierknopf bleiben wie gehabt.
 ------------------------------------------------------------ */
-.dokument h1 { margin-bottom: 0.75rem; }
-.dokument__untertitel {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: clamp(1.25rem, 2.6vw, 1.6rem);
-  font-style: italic;
+.raster > .dokument {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
+  max-width: 34em;
+}
+.dokument {
+  font-family: "EB Garamond", Garamond, "Times New Roman", serif;
+  font-size: 1.3125rem;
+  line-height: 1.5;
+  font-kerning: normal;
+}
+.dokument p { max-width: none; }
+.nobr { white-space: nowrap; }
+
+/* Titelblock wie auf der ersten PDF-Seite */
+.dokument__kopf { text-align: center; margin-bottom: 3rem; }
+.dokument .dokument__kopf p {
+  margin: 0;
+  text-indent: 0;
+  text-align: center;
+  -webkit-hyphens: manual;
+  hyphens: manual;
+}
+.dokument__kopf h1 {
+  margin: 0;
+  font-size: clamp(2.1rem, 5vw, 2.6rem);
   font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.14em;
+}
+.dokument__kopf h1 .eigenname { padding-left: 0.14em; }   /* gleicht die Sperrung nach dem letzten Buchstaben aus */
+.dokument__kopf .dokument__untertitel {
+  display: block;
+  margin-top: 0.55rem;
+  font-size: clamp(1.25rem, 2.6vw, 1.5rem);
+  font-style: normal;
   letter-spacing: 0;
   line-height: 1.3;
+  text-wrap: balance;
 }
-.dokument__achsen { color: var(--graphit); margin-top: 1.25rem; }
-.prosa .dokument__byline { color: var(--graphit); font-size: 0.9375rem; margin-top: 0.25rem; }
+.dokument .dokument__kopf .dokument__achsen {
+  margin-top: 1rem;
+  color: var(--graphit);
+  font-size: 0.875em;
+  text-wrap: balance;
+}
+.dokument .dokument__kopf .dokument__autorin { margin-top: 1.6rem; }
+.dokument .dokument__kopf .dokument__fassung { font-size: 0.9375em; }
+.dokument__ausgabe {
+  margin-top: 1.1rem;
+  color: var(--graphit);
+  font-size: 0.75em;
+  line-height: 1.55;
+}
+.dokument__ausgabe a { color: inherit; }
+.dokument__ausgabe a:hover { color: var(--tinte); }
+.dokument .dokument__kopf .dokument__pdf { margin-top: 1rem; font-size: 0.875em; }
+
+/* Fliesstext: Absätze ohne Abstand, mit Erstzeileneinzug */
+.dokument p + p { margin-top: 0; text-indent: 1.4em; }
+.dokument h2 {
+  margin: 2.2em 0 0.45em;
+  font-size: 1.15em;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+  scroll-margin-top: 1.5rem;
+}
+.dokument h3 {
+  margin: 1.8em 0 0.4em;
+  font-size: 1.05em;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+/* Absätze mit Stichwort am Anfang: kursiv, ohne Einzug, kleiner Abstand davor */
+.dokument .stichwort { margin-top: 0.6em; text-indent: 0; }
+.dokument .stichwort > b:first-child { font-weight: 400; font-style: italic; }
+
+.dokument__liste { margin: 0.35em 0 0.7em; padding-left: 1.4em; }
+.dokument__liste li { padding-left: 0.2em; }
+.dokument__liste li + li { margin-top: 0.15em; }
+.dokument__liste--buchstaben { list-style: none; padding-left: 1.4em; }
+.dokument__liste--buchstaben li { padding-left: 0; }
+
+/* Kennzeichnungen: eingerückt und etwas kleiner, wie im PDF */
+.dokument pre {
+  margin: 0.55em 0 0.85em;
+  padding: 0 0 0 1.4em;
+  font-family: inherit;
+  font-size: 0.9em;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.dokument code { font-family: inherit; }
+.dokument .dokument__label {
+  margin: 1em 0 0.1em;
+  text-indent: 0;
+  color: var(--graphit);
+  font-size: 0.875em;
+  font-style: italic;
+}
+
+.dokument .dokument__zitat {
+  margin-top: 0.45em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  text-align: left;
+  -webkit-hyphens: manual;
+  hyphens: manual;
+  overflow-wrap: anywhere;
+}
+
 .dokument__notiz {
-  margin: 1.5rem 0 0.5rem;
-  padding: 1rem 1.25rem;
+  margin: 1.2em 0;
+  padding: 0.8em 1.1em;
   border-left: 2px solid var(--tinte);
   background: rgba(28, 42, 74, 0.05);
+  font-size: 0.9em;
 }
-.dokument__label { font-size: 0.9375rem; color: var(--graphit); margin-bottom: 0.35rem; }
-.dokument pre {
-  margin: 0 0 1.1em;
-  padding: 0.75rem 1rem;
-  overflow-x: auto;
-  background: rgba(28, 42, 74, 0.06);
-  border-radius: 2px;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  white-space: pre-wrap;
-}
-.dokument code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
-.dokument__zitat { font-size: 1rem; overflow-wrap: anywhere; }
 
-.tabelle { overflow-x: auto; margin: 0.5rem 0 1.25rem; }
+/* Tabellen mit drei Linien (oben, unter dem Kopf, unten) wie im PDF */
+.tabelle { overflow-x: auto; margin: 0.6em 0 1em; }
 .tabelle table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9375rem;
-  line-height: 1.45;
+  border-top: 1.5px solid var(--tinte);
+  border-bottom: 1.5px solid var(--tinte);
+  font-size: 0.85em;
+  line-height: 1.4;
 }
 .tabelle th, .tabelle td {
+  padding: 0.45em 0.9em 0.45em 0;
   text-align: left;
   vertical-align: top;
-  padding: 0.6rem 0.75rem 0.6rem 0;
-  border-top: 1px solid var(--linie);
+  border: 0;
 }
-.tabelle thead th { color: var(--graphit); font-weight: 400; border-top: 0; }
-.tabelle tbody tr:last-child > * { border-bottom: 1px solid var(--linie); }
+.tabelle th:last-child, .tabelle td:last-child { padding-right: 0; }
+.tabelle thead th {
+  font-style: italic;
+  font-weight: 400;
+  border-bottom: 1px solid var(--tinte);
+}
 .tabelle tbody th { font-weight: 400; white-space: nowrap; }
-@media (max-width: 40rem) {
-  /* Auf dem Handy wird jede Tabellenzeile zu einem kleinen Block */
-  .tabelle thead { display: none; }
-  .tabelle tr { display: block; padding: 0.7rem 0; border-top: 1px solid var(--linie); }
-  .tabelle tbody tr:last-child { border-bottom: 1px solid var(--linie); }
-  .tabelle th, .tabelle td, .tabelle tbody tr:last-child > * { display: block; padding: 0; border: 0; }
-  .tabelle tbody th { white-space: normal; }
-  .tabelle td:nth-child(2) { color: var(--graphit); }
-}
-
-/* Factsheet */
-.dokument h3 { font-size: 1.2rem; font-weight: 450; margin: 2rem 0 0.6rem; }
-.tabelle__gruppe th {
-  padding-top: 1.1rem;
-  font-weight: 450;
-  color: var(--tinte);
-  white-space: normal !important;
-}
+.tabelle__gruppe th { padding-top: 0.9em; white-space: normal !important; }
+.tabelle__gruppe:not(:first-child) th { border-top: 1px solid var(--linie); }
 .tabelle--kuerzel tbody th { width: 3.5rem; }
-.prompt { position: relative; }
-.prompt pre { padding-bottom: 3rem; }
+
+/* Prompt zum Kopieren: bleibt als Kasten mit Knopf erkennbar */
+.prompt { position: relative; margin: 0.6em 0 1em; }
+.dokument .prompt pre {
+  margin: 0;
+  padding: 1rem 1.1rem 3.25rem;
+  background: rgba(28, 42, 74, 0.06);
+  border-radius: 2px;
+  font-size: 0.85em;
+}
 .prompt__knopf {
   position: absolute;
   right: 0.75rem;
   bottom: 0.75rem;
   font: inherit;
-  font-size: 0.875rem;
+  font-size: 0.8em;
   padding: 0.3rem 0.8rem;
   color: var(--papier);
   background: var(--tinte);
@@ -705,12 +849,25 @@ body { background: var(--nacht); }
 }
 .prompt__knopf:hover { background: var(--markierung); }
 .prompt__knopf:focus-visible { outline: 2px solid var(--markierung); outline-offset: 2px; }
+
 @media (max-width: 40rem) {
+  .dokument { font-size: 1.125rem; }
+  .dokument__kopf { margin-bottom: 2.25rem; }
+  .dokument p + p { text-indent: 1.2em; }
+  .dokument pre { padding-left: 1em; }
+
+  /* Auf dem Handy wird jede Tabellenzeile zu einem kleinen Block */
+  .tabelle thead { display: none; }
+  .tabelle table { border-bottom: 1.5px solid var(--tinte); }
+  .tabelle tr { display: block; padding: 0.55em 0; }
+  .tabelle tbody tr + tr { border-top: 1px solid var(--linie); }
+  .tabelle th, .tabelle td { display: block; padding: 0; border: 0; }
+  .tabelle tbody th { white-space: normal; }
+  .tabelle td:nth-child(2) { color: var(--graphit); }
+  .tabelle__gruppe:not(:first-child) th { border-top: 0; }
   .tabelle--kuerzel tbody th { width: auto; }
-  .tabelle--kuerzel tr:not(.tabelle__gruppe) { display: grid; grid-template-columns: 2.75rem 1fr; gap: 0.75rem; padding: 0.5rem 0; }
+  .tabelle--kuerzel tr:not(.tabelle__gruppe) { display: grid; grid-template-columns: 2.75rem 1fr; gap: 0.75rem; }
 }
-.dokument__liste { margin: -0.4em 0 1.1em; padding-left: 1.25rem; }
-.dokument__liste li + li { margin-top: 0.25rem; }
 
 /* Eigennamen wie CLEAR und PISCATOR werden nicht getrennt */
 .eigenname { -webkit-hyphens: manual; hyphens: manual; }

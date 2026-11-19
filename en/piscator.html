@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PISCATOR – Labelling AI Involvement in Research | Leonie Gantenbein</title>
+  <meta name="description" content="PISCATOR is a proposal by Leonie Gantenbein for disclosing the involvement of artificial intelligence in empirical research: eight statements on privacy, infrastructure, code, conception, tools, data processing, data origin and checking. PISCATOR complements CLEAR.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="PISCATOR – Labelling AI Involvement in Research | Leonie Gantenbein">
+  <meta property="og:description" content="PISCATOR is a proposal by Leonie Gantenbein for disclosing the involvement of artificial intelligence in empirical research: eight statements on privacy, infrastructure, code, conception, tools, data processing, data origin and checking. PISCATOR complements CLEAR.">
+  <meta property="og:image" content="https://leoniegantenbein.github.io/piscator-bild.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta property="og:image:alt" content="PISCATOR: Privacy, Infrastructure, Script, Conception, Attribution, Transformation, Origin, Responsibility">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://leoniegantenbein.github.io/en/piscator.html">
+  <link rel="alternate" hreflang="de" href="https://leoniegantenbein.github.io/piscator.html">
+  <link rel="alternate" hreflang="en" href="https://leoniegantenbein.github.io/en/piscator.html">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231c2a4a'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-style='italic' font-size='38' text-anchor='middle' fill='%23eceee8'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="../fonts/literata-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "https://leoniegantenbein.github.io/piscator.html#piscator",
+  "name": "PISCATOR – Kennzeichnung von KI-Beteiligung in der Forschung",
+  "alternateName": "PISCATOR – Labelling AI Involvement in Research",
+  "description": "PISCATOR is a proposal by Leonie Gantenbein for disclosing the involvement of artificial intelligence in empirical research: eight statements on personal reference, infrastructure, code, conception, tools, transformation, origin of the data and checking.",
+  "version": "1.0",
+  "dateCreated": "2026",
+  "inLanguage": [
+    "de",
+    "en"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://leoniegantenbein.github.io/en/piscator.html",
+  "sameAs": [
+    "https://github.com/LeonieGantenbein/piscator-kennzeichnung",
+    "https://doi.org/10.5281/zenodo.24372962"
+  ],
+  "author": {
+    "@type": "Person",
+    "@id": "https://leoniegantenbein.github.io/#person",
+    "name": "Leonie Gantenbein",
+    "url": "https://leoniegantenbein.github.io/"
+  },
+  "keywords": [
+    "PISCATOR",
+    "CLEAR",
+    "AI disclosure",
+    "research data",
+    "open science",
+    "data protection",
+    "KI-Kennzeichnung"
+  ],
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "@id": "https://leoniegantenbein.github.io/clear.html#clear",
+    "name": "CLEAR – Kennzeichnung von KI-Beteiligung an Texten",
+    "url": "https://leoniegantenbein.github.io/en/clear.html"
+  },
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.5281/zenodo.24372962"
+  }
+}
+  </script>
+</head>
+
+<!-- English version of piscator.html. Please make changes in both files and in the
+     README.en.md of the piscator-kennzeichnung repository. -->
+
+<body>
+  <a class="skip-link" href="#inhalt">Skip to content</a>
+
+  <div class="seite">
+
+    <header class="kopf raster nacht">
+      <a class="kopf__name rand" href="./">Dr. phil. Leonie Gantenbein</a>
+      <nav class="kopf__nav text" aria-label="Main navigation">
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="clear.html">CLEAR</a></li>
+          <li class="kopf__sprache"><a href="../piscator.html" lang="de" hreflang="de">Deutsch</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="unterseite raster blatt" id="inhalt">
+      <article class="text prosa dokument">
+        <header class="dokument__kopf">
+          <h1><span class="eigenname">PISCATOR</span> <span class="dokument__untertitel">Labelling AI Involvement in Research</span></h1>
+          <p class="dokument__achsen"><i>Privacy · Infrastructure · Script · Conception · Attribution · Transformation · Origin · Responsibility</i></p>
+          <p class="dokument__autorin">Leonie Gantenbein</p>
+          <p class="dokument__fassung">Version 1.0, November 2026</p>
+          <div class="dokument__ausgabe">
+            <p>© 2026 Leonie Gantenbein. Licence: <a href="https://creativecommons.org/licenses/by/4.0/legalcode.en">CC&nbsp;BY&nbsp;4.0</a>, free to use and adapt with attribution to the author.</p>
+            <p><a href="https://github.com/LeonieGantenbein/piscator-kennzeichnung/blob/main/README.en.md">github.com/LeonieGantenbein/piscator-kennzeichnung</a></p>
+            <p>DOI: <a href="https://doi.org/10.5281/zenodo.24372962">10.5281/zenodo.24372962</a></p>
+          </div>
+          <p class="dokument__pdf">Download as PDF: <a href="../dokumente/Gantenbein_2026_PISCATOR_en.pdf" type="application/pdf">English</a>, <a href="../dokumente/Gantenbein_2026_PISCATOR_de.pdf" type="application/pdf" hreflang="de" lang="de">Deutsch</a></p>
+        </header>
+
+        <p>The use of artificial intelligence (AI), and of the interfaces, tools and software that come with it, has long since arrived in research practice. These tools transcribe interviews, code open-ended responses, write analysis code, analyse large datasets, cluster data or generate synthetic data. Sometimes, and ideally locally under secure conditions, they are also trained on sensitive research data. AI tools run on researchers’ own computers, on university servers or with commercial providers abroad.</p>
+        <p>The widespread use of AI in scientific data processing and in writing scientific publications is not matched by the declaration of this use. Methods sections, and publications in general, still contain little information on how AI was actually used: which models were used, when and how, which data were processed with them, or how a text was improved or co-generated with AI. As things stand, we have arrived at declarations such as “Transcription was AI-assisted”. Which tool was used, on which server and under what control remains unknown.</p>
+        <p>If we want to ensure and assess research – indeed the integrity of science and its practice as a whole – in the future, the use of AI tools must be declared more specifically. A large language model (LLM) that codes open-ended responses decides, for every response, which category it belongs to. A script written by an AI determines which cases count as outliers and how missing values are replaced. Without AI, such decisions are set down in a coding manual or in code the researchers wrote themselves, and a second person can check them. With every additional interface and every automated step, the risk grows that researchers lose track of the process of their own research, do not understand the code and cannot assess the output and quality of the analysis. Results that no one has really understood, and opaque processing during the research data life cycle, put at risk the quality of research, the principles of good scientific practice and the standing of researchers.</p>
+        <p>The people who entrusted their data to a study are affected too. For them, it matters whether their interviews are processed on a laptop that rides the bus to the university every day or in a data centre in the United States, and whether a contract specifies what the provider may do with their data.</p>
+        <p>Science has so far had a well-established place for describing methodological procedures: the methods section. It states with which data, instruments and procedures a result was obtained, so that others can check it. AI belongs there like any other instrument. Many publishers and universities now require the use of AI to be disclosed, but most do not prescribe a common format. In the worst case – from a bureaucratic and resource-oriented perspective – the entire chat with an LLM involved in the process is demanded. Statements on AI use have so far varied from study to study, important details are often missing, and they can hardly be compared. A shared format would make it easier to declare the tools used and to compare practices. Researchers are also not yet fully aware of which questions an AI label should answer. Such a label should therefore ask for all the important information. It must take little effort to fill in, be clear to both writers and readers, and still say enough.</p>
+        <p><span class="eigenname">PISCATOR</span> is my proposal for such a format. <a href="clear.html"><span class="eigenname">CLEAR</span></a> labels how AI was involved in a text; <span class="eigenname">PISCATOR</span> transfers this approach to research practice. Eight short statements, one for each letter of <span class="eigenname">PISCATOR</span>, answer eight questions:</p>
+        <ul class="dokument__liste dokument__liste--buchstaben">
+          <li><b>P – Privacy</b>: Do the data refer to persons?</li>
+          <li><b>I – Infrastructure</b>: Where did the AI run?</li>
+          <li><b>S – Script</b>: How much did it contribute to the code?</li>
+          <li><b>C – Conception</b>: How much did it contribute to the research question and design?</li>
+          <li><b>A – Attribution</b>: Which models and tools were used?</li>
+          <li><b>T – Transformation</b>: What did the AI do with the data?</li>
+          <li><b>O – Origin</b>: Where do the data come from, and what kind of data are they?</li>
+          <li><b>R – Responsibility</b>: Did a human check the AI’s results?</li>
+        </ul>
+        <p>“Piscator” is the Latin word for fisherman. A catch report asks what was caught, where, with what and when; anyone who fishes enters this in a few fixed fields. The report is short and always has the same structure; that is precisely why it gets filled in. Such a catch report is inconspicuous, but not trivial: many reports together give a picture of what is happening in a body of water, what is being caught and with which methods. A single <span class="eigenname">PISCATOR</span> line declares where and how AI was involved in a project. Many such lines, in turn, can show how research practice is changing.</p>
+        <p>The name <span class="eigenname">PISCATOR</span> thus refers to the catch report as a model. It may also recall the Fisherman’s Ring, the <i lang="la">Anulus Piscatoris</i>, with which papal letters were sealed until 1842. A seal shows who stands behind a document. In <span class="eigenname">PISCATOR</span>, as in <span class="eigenname">CLEAR</span>, this is done by the statement R – Responsibility.</p>
+        <p>Some statements touch on a question that research has long been dealing with: how open should data be? Open science wants data, code and prompts to be accessible so that others can check a result, following the principle “as open as possible, as closed as necessary”. Data protection requires personal data to be processed and shared only as far as the purpose requires. <span class="eigenname">PISCATOR</span> therefore contains statements both on the personal reference of the data and on how openly the data were handled: it declares how far the data refer to persons, where they were processed and whether data and code are accessible.</p>
+        <p><span class="eigenname">PISCATOR</span> makes visible at which points in the research process AI was involved. This allows others to place a result, follow it and, where possible, replicate it. Anyone who reviews a study, sits on an ethics committee or looks after research data can thus see in a single line how, and with which tools, the research was done.</p>
+        <p>Anyone publishing research with <span class="eigenname">PISCATOR</span> gives both statements: <span class="eigenname">PISCATOR</span> for the procedure in the methods section, <span class="eigenname">CLEAR</span> for the text, provided AI tools were also used to produce or revise the text. Responsibility for a result always lies with whoever publishes it. This is why responsibility (R) comes at the end of the label in both <span class="eigenname">CLEAR</span> and <span class="eigenname">PISCATOR</span>.</p>
+        <aside class="dokument__notiz">
+          <p class="stichwort"><b>Relation to <span class="eigenname">CLEAR</span>.</b> <span class="eigenname">PISCATOR</span> is structured like <span class="eigenname">CLEAR</span> and adopts the letters C, A and R as well as the suffixes (p), (n) and (t). Anyone who knows <span class="eigenname">CLEAR</span> can read <span class="eigenname">PISCATOR</span>.</p>
+        </aside>
+
+        <h2>Culture before labelling</h2>
+        <p>A label only helps where openness is not penalised. Anyone who discloses today that a language model coded interviews or wrote a script must expect the study to be seen as less rigorous. Anyone who states that data were processed by an external provider becomes open to attack. As long as an honest statement does harm, only those who can afford it will label. For everyone else, silence remains the sensible choice.</p>
+        <p><span class="eigenname">PISCATOR</span> therefore first needs a shared understanding of how research wants to deal with AI. A <span class="eigenname">PISCATOR</span> line is information, not a confession. Anyone reviewing a study should read it like a methods section: as a basis for questions, not as evidence of carelessness. This also means making distinctions. A local, fully checked transcription is something different from a language model coding sensitive data, unchecked, with a provider in the United States. Calling both “AI-assisted” makes honesty expensive. And if a statement reveals a problem, that is a reason to correct it. This is exactly what the label is for.</p>
+        <p>Science is better placed for this than any other field. It has long led the way in disclosing its procedures and exposing itself to criticism. Methods sections, peer review and replication are part of its self-understanding. Statements on conflicts of interest, data availability or the contributions of individual authors have long been routine in many disciplines. Research has given itself most of these rules because results must be verifiable. So why should it not take the first step with AI as well?</p>
+        <p>If it succeeds, research can show that openness builds trust. <span class="eigenname">PISCATOR</span> only becomes effective when the absence of a statement also says something: when people ask why an empirical study does not declare where and how AI was involved.</p>
+
+        <h2>Which research</h2>
+        <p><span class="eigenname">PISCATOR</span> is intended for empirical research, quantitative or qualitative, that collects, prepares or analyses data with code. This includes interview studies and surveys, experiments and measurement series, corpus and archival work, modelling and simulation. Theoretical, historical or hermeneutic work without its own data and code does not need a <span class="eigenname">PISCATOR</span> statement; <span class="eigenname">CLEAR</span> is sufficient for its text.</p>
+        <p>Not every study needs all eight statements. Anything that does not occur is marked with an X; SX, for example, means that no code was written.</p>
+
+        <h2>Quick reference</h2>
+        <p>The eight statements at a glance:</p>
+        <div class="tabelle">
+          <table>
+            <thead><tr><th scope="col">Axis</th><th scope="col">Subject</th><th scope="col">Statement</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><b>P</b> – Privacy</th><td>Personal reference of the data an AI processed</td><td>P0&nbsp;no personal reference, P1&nbsp;anonymised, P2&nbsp;pseudonymised, P3&nbsp;identifiable<br>suffix (s)&nbsp;for sensitive personal data<br>availability (p)&nbsp;published, (r)&nbsp;restricted, (e)&nbsp;planned, (n)&nbsp;not published</td></tr>
+            <tr><th scope="row"><b>I</b> – Infrastructure</th><td>Where the AI with access to the data ran</td><td>I0&nbsp;local, I1&nbsp;protected infrastructure of the institution, I2&nbsp;external service with a data processing agreement, I3&nbsp;external service with general terms of use only<br>suffix: country of server location, e.g. (CH)</td></tr>
+            <tr><th scope="row"><b>S</b> – Script</th><td>AI in programming</td><td>S0&nbsp;without AI, S1&nbsp;assistance, S2&nbsp;parts generated, S3&nbsp;largely generated, S4&nbsp;fully generated<br>availability of code and prompts as for P</td></tr>
+            <tr><th scope="row"><b>C</b> – Conception</th><td>Research question, hypotheses, design, instruments</td><td>C0&nbsp;exclusively human, C1&nbsp;AI as a discussion partner, C2&nbsp;individual parts worked out by the AI, C3&nbsp;comprehensively generated by the AI</td></tr>
+            <tr><th scope="row"><b>A</b> – Attribution</th><td>Declaration of the tools</td><td>Models and tools with version, provider and type of use (applied, adapted, trained), programming languages, period</td></tr>
+            <tr><th scope="row"><b>T</b> – Transformation</th><td>What the AI did with the data</td><td>(co)&nbsp;collection, (ts)&nbsp;transcription, (oc)&nbsp;text recognition, (t)&nbsp;translation, (ps)&nbsp;pseudonymisation, (cl)&nbsp;cleaning, (im)&nbsp;imputation, (li)&nbsp;linkage, (ex)&nbsp;extraction, (su)&nbsp;summarisation, (an)&nbsp;coding, (mo)&nbsp;modelling<br>T0&nbsp;without AI</td></tr>
+            <tr><th scope="row"><b>O</b> – Origin</th><td>Source and form of the data</td><td>O0&nbsp;own collection only, O1&nbsp;own and reused data, O2&nbsp;reused data only<br>forms (or)&nbsp;original, (sc)&nbsp;scrambled, (ag)&nbsp;aggregated, (sy)&nbsp;synthetic, (si)&nbsp;simulated, (au)&nbsp;augmented</td></tr>
+            <tr><th scope="row"><b>R</b> – Responsibility</th><td>Checking of the AI’s results</td><td>R1&nbsp;fully checked and taken responsibility for, R2&nbsp;spot-checked, R3&nbsp;unchecked<br>suffix (v)&nbsp;systematically validated</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <pre><code>PISCATOR (role): P(…)?, I(…)?, S(…)?, C?, A: models, languages, period, T(…), O(…)?, R(…)?</code></pre>
+        <p class="stichwort"><b>Rules.</b></p>
+        <ul class="dokument__liste">
+          <li>As in <span class="eigenname">CLEAR</span>, suffixes precede the number: P(s, n)3, I(CH)2, S(p)2, O(or, sy)0, R(v)2.</li>
+          <li>For P, I, S, C and R, give the highest level reached. For T and the forms in O, list all applicable codes.</li>
+          <li>X marks what does not occur in the research: SX without code; PX, TX and OX without data; IX if no AI had access to the data.</li>
+          <li>T says what the AI did with the data; O says what kind of data they are. If an AI generates new records, for example synthetic or augmented ones, that belongs to O; if it changes values in existing entries, for example through imputation, that belongs to T.</li>
+          <li>I covers every AI with access to the data, including a coding assistant that can read data files. What counts is where the model actually runs, not where a program is installed.</li>
+          <li>If work steps differ considerably in personal reference or infrastructure, each step gets a line of its own, for example “<span class="eigenname">PISCATOR</span> (project team, training)”.</li>
+          <li>The brackets name who makes the statement and takes responsibility for it: a person, a project team or a lab.</li>
+        </ul>
+        <p class="stichwort"><b>Where the label goes.</b></p>
+        <ul class="dokument__liste">
+          <li>Article and book: in the methods section or the data availability statement</li>
+          <li>Data and code repository: in the README</li>
+          <li>Thesis: next to the declaration of authorship</li>
+          <li>Data management plan and grant proposal: as planned use</li>
+        </ul>
+        <p>The <span class="eigenname">CLEAR</span> line appears as usual at the end of the text or in the imprint.</p>
+
+        <h2>Examples</h2>
+        <p>Four examples show how a specific study becomes a statement.</p>
+        <p class="stichwort"><b>Interview study.</b> A sociologist conducts twenty interviews on living with a chronic illness. She transcribes the recordings with noScribe on her own computer and checks every transcript against the recording. Coding is done by hand; there are no scripts. The data are not published.</p>
+        <p>Identifiable health data, not published (P(s, n)3), but processed only locally (I0). There is no code (SX). The AI did nothing but transcribe (T(ts)), working with original data collected by the author (O(or)0). Every transcript was checked (R1).</p>
+        <pre><code>PISCATOR (author): P(s, n)3, I0, SX, C0, A: noScribe (Whisper large-v3, applied), <span class="nobr">03–09/2026</span>, T(ts), O(or)0, R1</code></pre>
+        <p class="stichwort"><b>Survey with a synthetic version.</b> A project team analyses its own survey. The pseudonymised data are stored on a university server. There, a language model codes the open-ended responses; 10% are re-coded by hand and the agreement is calculated. The team discussed its hypotheses with an AI. A coding assistant without access to the data writes parts of the analysis code. A model trained on the survey data generates a synthetic version, which is published; the original data are available on request.</p>
+        <p>Pseudonymised data (P2), openly available as a synthetic version and in the original on request (p, r). Everything ran on the university’s infrastructure (I1); the coding assistant does not count for I because it never saw the data. Parts of the code were generated; code and prompts are published (S(p)2). The language model did the coding (T(an)), systematically validated on a sample (R(v)2). A synthetic version was derived from original data collected by the team (O(or, sy)0).</p>
+        <pre><code>PISCATOR (project team): P(p, r)2, I1, S(p)2, C1, A: Llama 3.3 70B (applied), SDV CTGAN (trained on the survey data), Claude Code (Anthropic), Python 3.13, <span class="nobr">02–07/2026</span>, T(an), O(or, sy)0, R(v)2</code></pre>
+        <p class="stichwort"><b>Training and application in two steps.</b> A team trains a classification model on the university’s infrastructure with synthetic data that it previously generated without AI and published. It then applies the model locally to sensitive, identifiable data.</p>
+        <p>During training, the model saw only synthetic data judged to be anonymous (P1); during application, it ran locally (I0) on data that will not be published (P(s, n)3). Had an AI generated the synthetic data from real data, a third line would be added.</p>
+        <pre><code>PISCATOR (project team, training): P(p)1, I1, S(p)2, C1, A: own classification model (trained on synthetic data), Python 3.13, <span class="nobr">03–05/2026</span>, T0, O(sy)0, R(v)2
+PISCATOR (project team, application): P(s, n)3, I0, S(p)2, C1, A: own classification model (applied), Python 3.13, <span class="nobr">06–08/2026</span>, T(an), O(or)0, R(v)2</code></pre>
+        <p class="stichwort"><b>Statistics in a chat.</b> An economist uploads tables from official statistics to a chat that runs the analysis itself. She uses a private account and recalculates three results by hand.</p>
+        <p>The data have no personal reference and are published (P(p)0). A service without a data processing agreement is therefore unproblematic here (I(US)3). The code was produced invisibly in the chat (S4). With personal data, the same line would be a warning sign.</p>
+        <pre><code>PISCATOR (author): P(p)0, I(US)3, S4, C0, A: ChatGPT (GPT-5, OpenAI, applied), 05/2026, T0, O(ag)2, R2</code></pre>
+        <p>The chapter <a href="https://github.com/LeonieGantenbein/piscator-kennzeichnung/blob/main/SPECIFICATION.md">“Specification”</a> explains all axes in detail and gives guidance on classification. The <a href="#factsheet">factsheet</a> summarises all codes and contains a prompt with which a language model can propose a statement.</p>
+
+        <h2>Together with <span class="eigenname">CLEAR</span></h2>
+        <p>A publication carries both statements: <span class="eigenname">PISCATOR</span> in the methods section, <span class="eigenname">CLEAR</span> at the end of the text. An example: for the interview study, <span class="eigenname">CLEAR</span> records that the line of thought is the author’s own and that the AI smoothed the language and made her own unpublished material accessible. <span class="eigenname">PISCATOR</span> records what happened to the interviews. In <span class="eigenname">CLEAR</span>, the letter C refers to the line of thought of the text; in <span class="eigenname">PISCATOR</span>, to the research question and design of the study:</p>
+        <pre><code>CLEAR (author): C0, L2, E(n)1, A: noScribe (Whisper large-v3), ChatGPT (GPT-5), <span class="nobr">03–10/2026</span>, R1
+PISCATOR (author): P(s, n)3, I0, SX, C0, A: noScribe (Whisper large-v3, applied), <span class="nobr">03–09/2026</span>, T(ts), O(or)0, R1</code></pre>
+
+        <h2>What institutions can require</h2>
+        <p><span class="eigenname">PISCATOR</span> is first of all a self-declaration. But it can also be reversed: anyone who supervises, reviews, funds or publishes research can use the same statements to specify what is expected. Instead of banning tools, an institution names levels, and everyone knows where they stand.</p>
+        <p class="stichwort"><b>Universities and institutes.</b> A university can require in its guidelines on good scientific practice and on theses that every empirical study carries a <span class="eigenname">PISCATOR</span> line in the methods section. It can stipulate that any AI coding that feeds into results is fully or systematically checked (R1 or R(v)), and that identifiable or sensitive data (P3, P(s)) are processed only locally, on its own infrastructure or by services with a data processing agreement (I0 to I2). Anyone who requires this must, however, also provide such infrastructure and say which services count as I1 or I2.</p>
+        <p class="stichwort"><b>Ethics committees and funders.</b> <span class="eigenname">PISCATOR</span> deliberately does not record whether participants’ consent covers AI processing, whether particularly vulnerable groups such as minors are involved, or how much computing power and energy an analysis required. These belong in the ethics application and the data management plan. A planned <span class="eigenname">PISCATOR</span> line can, however, be included there. It shows at a glance where questions are worth asking, for example with P(s)3 together with I2 or I3. If the line in the later publication differs, the difference can be explained.</p>
+        <p class="stichwort"><b>Journals and publishers.</b> Author guidelines can state that <span class="eigenname">PISCATOR</span> belongs in the methods section and <span class="eigenname">CLEAR</span> at the end. A publisher with an open science policy can expect accessible data and code as the norm (P(p) or P(r), S(p)) and ask for exceptions to be justified. Reviewers get a starting point for their own questions.</p>
+        <p>For all institutions, the same applies as for the label itself: whoever requires disclosure must not penalise it. A declared weakness is better than a concealed one. Demanding chat histories or prompt logs across the board creates bureaucracy and new data protection problems without making assessment any easier. An institution achieves most when its own researchers, editors and reviewers lead by example.</p>
+
+        <h2>Critical objections</h2>
+        <p><span class="eigenname">PISCATOR</span> has to face objections. The most important ones are collected here, each with a reply.</p>
+        <p class="stichwort"><b>“Anyone who wants to can lie.”</b> That is true. <span class="eigenname">PISCATOR</span> relies on self-declaration, like statements on authorship or conflicts of interest. These can be falsified too, and they are still indispensable because they assign responsibility. A false statement can be checked and challenged. Silence cannot.</p>
+        <p class="stichwort"><b>“This is extra bureaucracy.”</b> The label is one line. It replaces descriptions that are already required today but vary widely. Bureaucracy tends to arise where entire chat histories are demanded.</p>
+        <p class="stichwort"><b>“One line cannot capture a research process.”</b> It is not meant to. Like a catch report, it records what others need to know in order to ask targeted questions. The details still belong in the methods section. If work steps differ considerably, each gets its own line.</p>
+        <p class="stichwort"><b>“The levels are fuzzy.”</b> Whether a script is S2 or S3 requires judgement. That is no flaw, since describing a method also rests on assessments. The specification offers guidance and examples. Contested cases are an occasion for discussion, for instance in peer review.</p>
+        <p class="stichwort"><b>“The statement makes you vulnerable.”</b> Anyone who declares I3 for identifiable data discloses a problem. That is precisely the benefit: what is visible can be fixed. For this to work, openness must not be penalised. <span class="eigenname">PISCATOR</span> does not ask for technical details that would pose a security risk; the statement only names the country and the type of contract.</p>
+        <p class="stichwort"><b>“<span class="eigenname">PISCATOR</span> will become outdated as tools change.”</b> The axes describe work steps and responsibility, not products. Which tools were used is stated under A and may change. New ways of working will need new codes; that is why <span class="eigenname">PISCATOR</span> carries a version number.</p>
+
+        <h2>Status</h2>
+        <p><span class="eigenname">PISCATOR</span> is a proposal in a first version. It builds on <span class="eigenname">CLEAR</span> but has not yet been tested in research practice and is certainly incomplete. Like any self-declaration, it depends on the statements being made honestly; they can only partly be verified. Feedback from research, data management and ethics committees helps to develop <span class="eigenname">PISCATOR</span> further, explicitly including objections and cases that do not fit. Feedback is possible via the <a href="https://github.com/LeonieGantenbein/piscator-kennzeichnung/issues">“Issues” of this repository</a>.</p>
+
+        <h2>Citation</h2>
+        <p class="dokument__zitat">Gantenbein, Leonie (2026): <span class="eigenname">PISCATOR</span> – Kennzeichnung von KI-Beteiligung in der Forschung [<span class="eigenname">PISCATOR</span> – Labelling AI Involvement in Research]. Version 1.0. Zenodo. <a href="https://doi.org/10.5281/zenodo.24372962">https://doi.org/10.5281/zenodo.24372962</a></p>
+
+        <h2 id="factsheet">Factsheet</h2>
+        <p>The factsheet summarises all abbreviations and rules on one page. You can use it for reference or give it to a language model so that it proposes a <span class="eigenname">PISCATOR</span> statement for a research project. Detailed explanations of each axis are given in the <a href="https://github.com/LeonieGantenbein/piscator-kennzeichnung/blob/main/SPECIFICATION.md">specification</a>.</p>
+        <p class="dokument__label">Notation</p>
+        <pre><code>PISCATOR (role): P(…)?, I(…)?, S(…)?, C?, A: models, languages, period, T(…), O(…)?, R(…)?</code></pre>
+        <div class="tabelle tabelle--kuerzel">
+          <table>
+            <thead><tr><th scope="col">Abbreviation</th><th scope="col">Meaning</th></tr></thead>
+            <tbody>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>P</b> – Privacy: personal reference of the data an AI processed</th></tr>
+            <tr><th scope="row">P0</th><td>No personal reference.</td></tr>
+            <tr><th scope="row">P1</th><td>Anonymised.</td></tr>
+            <tr><th scope="row">P2</th><td>Pseudonymised: re-attributable by means of a key, even if third parties hold it.</td></tr>
+            <tr><th scope="row">P3</th><td>Identifiable.</td></tr>
+            <tr><th scope="row">(s)</th><td>Sensitive personal data, according to Art. 5(c) Swiss FADP and Art. 9 GDPR.</td></tr>
+            <tr><th scope="row">(p)</th><td>Data published, openly accessible.</td></tr>
+            <tr><th scope="row">(r)</th><td>Restricted access: on request or with controlled access.</td></tr>
+            <tr><th scope="row">(e)</th><td>Publication planned, for example after an embargo.</td></tr>
+            <tr><th scope="row">(n)</th><td>Data not published.</td></tr>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>I</b> – Infrastructure: where the AI with access to the data ran</th></tr>
+            <tr><th scope="row">I0</th><td>Local, on one’s own computer.</td></tr>
+            <tr><th scope="row">I1</th><td>Protected infrastructure of one’s own institution.</td></tr>
+            <tr><th scope="row">I2</th><td>External service with a data processing agreement.</td></tr>
+            <tr><th scope="row">I3</th><td>External service with general terms of use only.</td></tr>
+            <tr><th scope="row">(CH) …</th><td>Country of server location, for example (CH), (DE), (EU), (US).</td></tr>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>S</b> – Script: AI in programming</th></tr>
+            <tr><th scope="row">S0</th><td>Without AI.</td></tr>
+            <tr><th scope="row">S1</th><td>Assistance: completion, debugging, explanation.</td></tr>
+            <tr><th scope="row">S2</th><td>Parts generated.</td></tr>
+            <tr><th scope="row">S3</th><td>Largely generated, read and revised by the human.</td></tr>
+            <tr><th scope="row">S4</th><td>Fully generated, without a human reading the code.</td></tr>
+            <tr><th scope="row">(p) (r) (e) (n)</th><td>Availability of code and prompts, as for P.</td></tr>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>C</b> – Conception: research question, hypotheses, design, instruments</th></tr>
+            <tr><th scope="row">C0</th><td>Exclusively human.</td></tr>
+            <tr><th scope="row">C1</th><td>AI as a discussion partner.</td></tr>
+            <tr><th scope="row">C2</th><td>Individual parts worked out by the AI.</td></tr>
+            <tr><th scope="row">C3</th><td>Comprehensively generated by the AI.</td></tr>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>A</b> – Attribution: models and tools with version, provider and type of use (applied, adapted, trained), programming languages, period</th></tr>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>T</b> – Transformation: what the AI did with the data</th></tr>
+            <tr><th scope="row">T0</th><td>Collection and processing without AI.</td></tr>
+            <tr><th scope="row">(co)</th><td>Collection: interviews, surveys, data gathering by AI.</td></tr>
+            <tr><th scope="row">(ts)</th><td>Transcription.</td></tr>
+            <tr><th scope="row">(oc)</th><td>Text and handwriting recognition.</td></tr>
+            <tr><th scope="row">(t)</th><td>Translation, as L(t) in <span class="eigenname">CLEAR</span>.</td></tr>
+            <tr><th scope="row">(ps)</th><td>Pseudonymisation: names and identifiers replaced or removed.</td></tr>
+            <tr><th scope="row">(cl)</th><td>Cleaning.</td></tr>
+            <tr><th scope="row">(im)</th><td>Imputation of missing values.</td></tr>
+            <tr><th scope="row">(li)</th><td>Linkage of datasets.</td></tr>
+            <tr><th scope="row">(ex)</th><td>Extraction of information from documents.</td></tr>
+            <tr><th scope="row">(su)</th><td>Summarisation with which work continues.</td></tr>
+            <tr><th scope="row">(an)</th><td>Coding, classification, annotation.</td></tr>
+            <tr><th scope="row">(mo)</th><td>Modelling: the AI produces findings itself.</td></tr>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>O</b> – Origin: source and form of the data</th></tr>
+            <tr><th scope="row">O0</th><td>Own collection or generation only.</td></tr>
+            <tr><th scope="row">O1</th><td>Own collection and reused data.</td></tr>
+            <tr><th scope="row">O2</th><td>Reused data only.</td></tr>
+            <tr><th scope="row">(or)</th><td>Original.</td></tr>
+            <tr><th scope="row">(sc)</th><td>Scrambled: values swapped, masked or perturbed.</td></tr>
+            <tr><th scope="row">(ag)</th><td>Aggregated.</td></tr>
+            <tr><th scope="row">(sy)</th><td>Synthetic.</td></tr>
+            <tr><th scope="row">(si)</th><td>Simulated or model-generated.</td></tr>
+            <tr><th scope="row">(au)</th><td>Augmented.</td></tr>
+            <tr class="tabelle__gruppe"><th scope="rowgroup" colspan="2"><b>R</b> – Responsibility: accountability</th></tr>
+            <tr><th scope="row">R1</th><td>Fully checked and taken responsibility for by the human.</td></tr>
+            <tr><th scope="row">R2</th><td>Spot-checked.</td></tr>
+            <tr><th scope="row">R3</th><td>Used unchecked, with the risk of having to take responsibility for it nonetheless.</td></tr>
+            <tr><th scope="row">(v)</th><td>Systematically validated, procedure and figures documented.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Prompt for a language model’s self-declaration</h3>
+        <p>A language model can propose a <span class="eigenname">PISCATOR</span> statement. To do so, copy the following text into the chat in which you worked on the project. The model proposes what it can derive from the conversation and asks about the rest. R is always set by you.</p>
+        <div class="prompt">
+          <pre><code id="piscator-prompt">Please label, according to PISCATOR, how AI was involved in this research project. Base your answer on our conversation so far. Whatever you cannot derive from it with certainty, ask me instead of guessing. This applies above all to P, I and O.
+
+For each axis, give the applicable statement and justify it in one sentence. X means: does not occur in this project.
+
+P – Privacy (personal reference of the data an AI processed): P0 no personal reference · P1 anonymised · P2 pseudonymised · P3 identifiable; suffixes (s) sensitive · (p) published · (r) restricted access · (e) publication planned · (n) not published
+I – Infrastructure (where the AI with access to the data ran): I0 local · I1 protected infrastructure of the institution · I2 external service with a data processing agreement · I3 external service with general terms of use only; suffix: country of server location, e.g. (CH)
+S – Script (AI in programming): S0 without AI · S1 assistance · S2 parts generated · S3 largely generated, read by the human · S4 fully generated, without reading the code; suffixes (p) (r) (e) (n) for code and prompts
+C – Conception (research question, hypotheses, design, instruments): C0 exclusively human · C1 AI as a discussion partner · C2 individual parts worked out by the AI · C3 comprehensively generated by the AI
+A – Attribution: models and tools with version, provider and type of use (applied, adapted, trained), programming languages, period
+T – Transformation (what the AI did with the data): (co) collection · (ts) transcription · (oc) text recognition · (t) translation · (ps) pseudonymisation · (cl) cleaning · (im) imputation · (li) linkage · (ex) extraction · (su) summarisation · (an) coding · (mo) modelling; T0 without AI
+O – Origin: O0 own collection only · O1 own and reused data · O2 reused data only; forms (or) original · (sc) scrambled · (ag) aggregated · (sy) synthetic · (si) simulated · (au) augmented
+R – Responsibility: Leave R open. Only the human can make this statement.
+
+Format: PISCATOR (role): P(…)?, I(…)?, S(…)?, C?, A: …, T(…), O(…)?, R?
+Suffixes precede the number, for example P(s, n)3 or O(or, sy)0. If work steps differ considerably in personal reference or infrastructure, propose a separate line for each step.</code></pre>
+          <button type="button" class="prompt__knopf" data-ziel="piscator-prompt" data-fertig="Copied">Copy prompt</button>
+        </div>
+
+        <h3>Limits of the self-declaration</h3>
+        <p>A model can only assess what it has seen. With <span class="eigenname">PISCATOR</span>, this is even less than with <span class="eigenname">CLEAR</span>: where data are stored, whether they were pseudonymised and which agreements are in place rarely appear in a chat. The model should therefore ask, and the answers come from you.</p>
+        <p>A research project also rarely takes place in a single chat. If you used several chats, tools or models, the model can assess only part of it. In that case, make the classification yourself.</p>
+        <p>Even in the best case, the model’s statement remains a proposal that you check and correct where necessary. Only a human can take on responsibility (R).</p>
+      </article>
+    </main>
+
+    <footer class="fuss raster nacht">
+      <p class="rand">© 2026 Leonie Gantenbein</p>
+      <div class="text">
+        <p><a href="./">Home</a></p>
+        <p><a href="imprint.html">Legal notice and privacy</a></p>
+      </div>
+      <p class="rand">AI involvement</p>
+      <div class="text clear-angabe">
+        <p class="clear-angabe__zeile">Version on this page (English translation): CLEAR (Leonie Gantenbein): C1, L(t)3, E(p)2, A: Claude Opus 5.5, 11/2026, R1</p>
+        <p class="clear-angabe__zeile">No PISCATOR statement: this page is not based on any data processing of its own.</p>
+      </div>
+    </footer>
+
+  </div>
+  <script>
+    document.querySelectorAll(".prompt__knopf").forEach(function (knopf) {
+      var text = knopf.textContent;
+      knopf.addEventListener("click", function () {
+        var ziel = document.getElementById(knopf.dataset.ziel);
+        navigator.clipboard.writeText(ziel.textContent).then(function () {
+          knopf.textContent = knopf.dataset.fertig;
+          setTimeout(function () { knopf.textContent = text; }, 2000);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Website von Leonie Gantenbein
 
-Eine schlichte, schnelle Website für GitHub Pages: Zur Person, Publikationen, Lebenslauf, Kontakt und ein Impressum. Keine Programmierkenntnisse nötig, keine Cookies, keine Tracker, die Schrift ist lokal eingebunden.
+Eine schlichte, schnelle Website für GitHub Pages: Zur Person, Publikationen, Lebenslauf, Kontakt und ein Impressum. Keine Programmierkenntnisse nötig, keine Cookies, keine Tracker, die Schriften sind lokal eingebunden.
 
 ## Was im Ordner liegt
 
@@ -19,7 +19,7 @@ Eine schlichte, schnelle Website für GitHub Pages: Zur Person, Publikationen, L
 | `piscator.html`, `en/piscator.html` | Seite zu PISCATOR, dem Gegenstück zu CLEAR für die Forschung |
 | `dokumente/` | Die Artikel zu CLEAR und PISCATOR als PDF, je auf Deutsch und Englisch (dieselben Dateien wie auf Zenodo) |
 | `sitemap.xml`, `robots.txt` | Zeigen Google, welche Seiten es gibt |
-| `fonts/` | Die Schrift Literata (frei nutzbar, SIL Open Font License) |
+| `fonts/` | Die Schriften Literata (Startseite) und EB Garamond (Artikelseiten zu CLEAR und PISCATOR, wie in den PDFs), beide frei nutzbar (SIL Open Font License) |
 
 ## In 5 Schritten online
 
@@ -30,7 +30,7 @@ Deine Adresse wird **https://leoniegantenbein.github.io**
    - Name: genau `leoniegantenbein.github.io`
    - Sichtbarkeit: **Public** (mit einem kostenlosen Konto funktioniert GitHub Pages nur mit öffentlichen Repositories)
    - auf **Create repository** klicken
-3. **Dateien hochladen:** im neuen Repository auf **uploading an existing file** (oder **Add file**, dann **Upload files**). Den *Inhalt* dieses Ordners hineinziehen, also alle Dateien sowie die Ordner `en` und `fonts`, nicht den Ordner selbst. Unten auf **Commit changes** klicken.
+3. **Dateien hochladen:** im neuen Repository auf **uploading an existing file** (oder **Add file**, dann **Upload files**). Den *Inhalt* dieses Ordners hineinziehen, also alle Dateien sowie die Ordner `en`, `fonts` und `dokumente`, nicht den Ordner selbst. Unten auf **Commit changes** klicken.
 4. **Pages prüfen:** im Repository auf **Settings**, links auf **Pages**. Unter *Build and deployment* sollte stehen: Source **Deploy from a branch**, Branch **main** und Ordner **/ (root)**. Falls nicht, so einstellen und **Save** klicken.
 5. **Fertig:** Nach ein bis zwei Minuten ist die Seite unter `https://leoniegantenbein.github.io` erreichbar.
 
