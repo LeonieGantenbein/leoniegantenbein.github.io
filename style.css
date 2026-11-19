@@ -869,5 +869,92 @@ body { background: var(--nacht); }
   .tabelle--kuerzel tr:not(.tabelle__gruppe) { display: grid; grid-template-columns: 2.75rem 1fr; gap: 0.75rem; }
 }
 
+/* ------------------------------------------------------------
+   Startseite: das helle Blatt (div.blatt) im Satz der Artikelseiten.
+   EB Garamond, Blocksatz mit Einzügen, Überschriften wie in den Artikeln.
+   Raster, Bilder und Cover bleiben, wie sie sind.
+------------------------------------------------------------ */
+div.blatt {
+  font-family: "EB Garamond", Garamond, "Times New Roman", serif;
+  font-size: 1.3125rem;
+  line-height: 1.5;
+}
+div.blatt .abschnitt { border-top: 0; padding-top: 3rem; }
+div.blatt .abschnitt__titel {
+  margin-bottom: 0.7em;
+  font-size: 1.15em;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+/* Randspalte: klein und grau, wie die Angaben im Titelblock der Artikel */
+div.blatt .rand { font-size: 0.8em; line-height: 1.5; }
+div.blatt .rand p + p { margin-top: 0.2em; }
+
+/* Fliesstext: Absätze ohne Abstand, mit Erstzeileneinzug */
+div.blatt .prosa p + p { margin-top: 0; text-indent: 1.4em; }
+
+/* Publikationen */
+div.blatt .eintrag .rand { padding-top: 0.3em; }
+div.blatt .eintrag__titel {
+  margin-bottom: 0.45em;
+  font-size: 1.15em;
+  font-weight: 400;
+  line-height: 1.3;
+}
+div.blatt .eintrag__titel .eigenname { font-style: normal; letter-spacing: 0.1em; }
+div.blatt .eintrag__untertitel {
+  margin-top: 0.15em;
+  font-size: 0.85em;
+  font-style: normal;
+  line-height: 1.35;
+}
+div.blatt .eintrag__text { margin: 0; }
+div.blatt .eintrag__text + .eintrag__text { text-indent: 1.4em; }
+div.blatt .eintrag__uebersetzung { margin-top: 0.3em; font-size: 0.75em; line-height: 1.45; }
+div.blatt .eintrag__link { font-size: 0.875em; }
+div.blatt .text > .eintrag__link { display: inline-block; margin-top: 0.5em; }
+div.blatt .eintrag__links { margin-top: 0.5em; }
+
+/* Lebenslauf als Tabelle mit Linie oben und unten, wie im Artikel */
+div.blatt .cv__titel {
+  padding-top: 0.25em;
+  font-size: 1.05em;
+  font-style: italic;
+  font-weight: 400;
+}
+div.blatt .cv__liste {
+  border-top: 1.5px solid var(--tinte);
+  border-bottom: 1.5px solid var(--tinte);
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+div.blatt .cv__liste li {
+  grid-template-columns: 6.5em minmax(0, 1fr);
+  padding: 0.5em 0;
+  border: 0;
+  line-height: 1.4;
+}
+div.blatt .cv__liste li:first-child { padding-top: 0.6em; }
+div.blatt .cv__liste li:last-child { padding-bottom: 0.6em; border: 0; }
+div.blatt .cv__zeit { padding-top: 0; font-size: 1em; }
+div.blatt .cv__wo { font-size: 1em; }
+
+/* Kontakt */
+div.blatt .kontakt .text { font-size: 1em; }
+div.blatt .kontakt .rand { padding-top: 0.2em; }
+
+@media (max-width: 40rem) {
+  div.blatt { font-size: 1.125rem; }
+  div.blatt .abschnitt { padding-top: 2.25rem; }
+  div.blatt .prosa p + p,
+  div.blatt .eintrag__text + .eintrag__text { text-indent: 1.2em; }
+  div.blatt .eintrag .rand { padding-top: 0; }
+  div.blatt .eintrag .rand p + p { margin-top: 0; }   /* Angaben stehen auf dem Handy in einer Zeile */
+  div.blatt .cv__titel { padding-top: 0; margin-bottom: 0.3em; }
+  div.blatt .cv__liste li { grid-template-columns: 5.25em minmax(0, 1fr); column-gap: 0.75em; }
+}
+
 /* Eigennamen wie CLEAR und PISCATOR werden nicht getrennt */
 .eigenname { -webkit-hyphens: manual; hyphens: manual; }
