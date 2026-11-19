@@ -17,6 +17,7 @@ Eine schlichte, schnelle Website für GitHub Pages: Zur Person, Publikationen, L
 | `mail.js` | Setzt deine E-Mail-Adresse erst beim Klick zusammen, damit sie nicht offen auf der Seite steht |
 | `clear.html`, `en/clear.html` | Eigene Seite zu CLEAR, damit man es bei Google findet |
 | `piscator.html`, `en/piscator.html` | Seite zu PISCATOR, dem Gegenstück zu CLEAR für die Forschung |
+| `dokumente/` | Die Artikel zu CLEAR und PISCATOR als PDF, je auf Deutsch und Englisch (dieselben Dateien wie auf Zenodo) |
 | `sitemap.xml`, `robots.txt` | Zeigen Google, welche Seiten es gibt |
 | `fonts/` | Die Schrift Literata (frei nutzbar, SIL Open Font License) |
 
