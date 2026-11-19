@@ -29,7 +29,7 @@ Deine Adresse wird **https://leoniegantenbein.github.io**
    - Name: genau `leoniegantenbein.github.io`
    - Sichtbarkeit: **Public** (mit einem kostenlosen Konto funktioniert GitHub Pages nur mit öffentlichen Repositories)
    - auf **Create repository** klicken
-3. **Dateien hochladen:** im neuen Repository auf **uploading an existing file** (oder **Add file**, dann **Upload files**). Den *Inhalt* dieses Ordners hineinziehen, also `index.html`, `impressum.html`, `style.css`, `mail.js`, alle Bilder (`.jpg`), `clear.html`, `sitemap.xml`, `robots.txt` und die Ordner `en` und `fonts`. Unten auf **Commit changes** klicken.
+3. **Dateien hochladen:** im neuen Repository auf **uploading an existing file** (oder **Add file**, dann **Upload files**). Den *Inhalt* dieses Ordners hineinziehen, also alle Dateien sowie die Ordner `en` und `fonts`, nicht den Ordner selbst. Unten auf **Commit changes** klicken.
 4. **Pages prüfen:** im Repository auf **Settings**, links auf **Pages**. Unter *Build and deployment* sollte stehen: Source **Deploy from a branch**, Branch **main** und Ordner **/ (root)**. Falls nicht, so einstellen und **Save** klicken.
 5. **Fertig:** Nach ein bis zwei Minuten ist die Seite unter `https://leoniegantenbein.github.io` erreichbar.
 
@@ -57,8 +57,12 @@ Deine E-Mail-Adresse steht nicht als Text auf der Seite. Wer auf „Nachricht sc
 CLEAR liegt in einem eigenen Repository: **https://github.com/LeonieGantenbein/clear-kennzeichnung**. Die Website verlinkt darauf, und Rückmeldungen kommen dort über **Issues** an.
 
 1. Auf github.com **+**, dann **New repository**. Name genau `clear-kennzeichnung`, **Public**, **Create repository**.
-2. Auf **uploading an existing file** klicken und den Inhalt des Ordners `clear-kennzeichnung` hineinziehen: auf Deutsch `README.md`, `KULTUR.md`, `SPEZIFIKATION.md`, `FACTSHEET.md`, auf Englisch `README.en.md`, `CULTURE.md`, `SPECIFICATION.md`, `FACTSHEET.en.md`, dazu `LICENSE.md` und `CITATION.cff`. **Commit changes**.
+2. Auf **uploading an existing file** klicken und den Inhalt des Ordners `clear-kennzeichnung` hineinziehen: auf Deutsch `README.md`, `KULTUR.md`, `SPEZIFIKATION.md`, `BEISPIELE.md`, `FACTSHEET.md`, auf Englisch `README.en.md`, `CULTURE.md`, `SPECIFICATION.md`, `EXAMPLES.md`, `FACTSHEET.en.md`, dazu `LICENSE.md` und `CITATION.cff`. **Commit changes**.
 3. Fertig. GitHub zeigt die `README.md` als Startseite, und über **Cite this repository** lässt sich CLEAR direkt zitieren.
+
+## Das PISCATOR-Repository
+
+PISCATOR, das Gegenstück zu CLEAR für die Forschung, liegt ebenfalls in einem eigenen Repository: **https://github.com/LeonieGantenbein/piscator-kennzeichnung**. Es wird genauso angelegt und befüllt wie CLEAR: auf Deutsch `README.md`, `SPEZIFIKATION.md`, `FACTSHEET.md`, auf Englisch `README.en.md`, `SPECIFICATION.md`, `FACTSHEET.en.md`, dazu `LICENSE.md` und `CITATION.cff`.
 
 ## Eigene Domain (optional)
 
